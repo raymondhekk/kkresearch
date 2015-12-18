@@ -42,11 +42,6 @@
 		  <version>4.5</version>
 	  </dependency>
 
-	  <dependency>
-		  <groupId>joda-time</groupId>
-		  <artifactId>joda-time</artifactId>
-		  <version>2.3</version>
-	  </dependency>
 
 	  <dependency>
 		  <groupId>com.google.code.gson</groupId>
@@ -66,6 +61,12 @@
 		  <artifactId>commons-io</artifactId>
 		  <version>${commons-io.version}</version>
 	  </dependency>
+	  
+	     <dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka_2.10</artifactId>
+			<version>0.8.2.2</version>
+		</dependency>
   </dependencies>
 
   

@@ -15,8 +15,20 @@
   <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
-  <classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.3/joda-time-2.3.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" sourcepath="M2_REPO/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar" sourcepath="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4.jar" sourcepath="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar" sourcepath="M2_REPO/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar" sourcepath="M2_REPO/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar" sourcepath="M2_REPO/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar" sourcepath="M2_REPO/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar" sourcepath="M2_REPO/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar" sourcepath="M2_REPO/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar" sourcepath="M2_REPO/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/jline/jline/0.9.94/jline-0.9.94.jar" sourcepath="M2_REPO/jline/jline/0.9.94/jline-0.9.94-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar" sourcepath="M2_REPO/io/netty/netty/3.7.0.Final/netty-3.7.0.Final-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar" sourcepath="M2_REPO/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/101tec/zkclient/0.3/zkclient-0.3.jar" sourcepath="M2_REPO/com/101tec/zkclient/0.3/zkclient-0.3-sources.jar"/>
 </classpath>
