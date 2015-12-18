@@ -37,6 +37,7 @@
 	
   <modules>
 	  <module>kk-spring</module>
+	  <module>kk-message</module>
   </modules>
 
  <dependencyManagement>
