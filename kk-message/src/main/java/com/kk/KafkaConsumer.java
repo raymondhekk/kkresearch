@@ -4,14 +4,21 @@
 package com.kk;
 
 
-import java.util.HashMap;  
-import java.util.List;  
-import java.util.Map;  
-import java.util.Properties;  
- 
-import kafka.consumer.ConsumerConfig;  
-import kafka.consumer.ConsumerIterator;  
-import kafka.consumer.KafkaStream;  
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.integration.channel.QueueChannel;
+
+import kafka.consumer.ConsumerConfig;
+import kafka.consumer.ConsumerIterator;
+import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;  
  
 /** 
@@ -65,5 +72,38 @@ public class KafkaConsumer extends Thread
 // 
        KafkaConsumer consumerThread = new KafkaConsumer(KafkaProperties.topic);  
        consumerThread.start();  
+      
    }  
+	   
+//   	public static void main(String[] args) throws InterruptedException {
+//   		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("consumer-context.xml");
+//		QueueChannel channel = (QueueChannel)context.getBean("inputFromKafka",QueueChannel.class);
+//		
+//		org.springframework.messaging.Message msg = channel.receive();
+//		System.out.println("QueueChannel:"  + channel.getClass() + "," + msg);
+//		while((msg=channel.receive())!=null) {
+//			System.out.println("receive:" );
+//			Thread.sleep(2000);
+//			HashMap map = (HashMap) msg.getPayload();
+//			
+//			Set<Map.Entry> set = map.entrySet();
+//            for (Map.Entry entry : set) {
+//                String topic = (String)entry.getKey();
+//                System.out.println("Topic:" + topic);
+//                ConcurrentHashMap<Integer,List<byte[]>> messages = (ConcurrentHashMap<Integer,List<byte[]>>)entry.getValue();
+//                Collection<List<byte[]>> values = messages.values();
+//                for (Iterator<List<byte[]>> iterator = values.iterator(); iterator.hasNext();) {
+//                    List<byte[]> list = iterator.next();
+//                    for (byte[] object : list) {
+//                        String message = new String(object);
+//                        System.out.println("\tMessage: " + message);
+//                    }
+//                }
+//            }
+//		}
+//		
+//		context.close();
+//	}
+//   
+   
 }  

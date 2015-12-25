@@ -3,6 +3,10 @@
  */
 package com.kk;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.messaging.MessageChannel;
+import org.springframework.messaging.support.GenericMessage;
+
 /**
  * @author kk
  *
@@ -17,4 +21,17 @@ public class KafkaConsumerProducerDemo
         KafkaConsumer consumerThread = new KafkaConsumer(KafkaProperties.topic);  
         consumerThread.start();  
     }  
+	
+//	public static void main(String[] args) {
+//		
+//		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+//		MessageChannel channel = (MessageChannel)context.getBean("inputToKafka");
+//		
+//		for (int i = 0; i < 10; i++) {
+//			channel.send(new GenericMessage<>("Msg" + i));
+//			
+//			System.out.println("send message" + i);
+//		}
+//		context.close();
+//	}
 } 
