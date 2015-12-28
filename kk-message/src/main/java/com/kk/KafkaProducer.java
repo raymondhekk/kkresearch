@@ -5,9 +5,7 @@ package com.kk;
 
 import java.util.Properties;
 
-import org.springframework.context.support.AbstractApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
 import kafka.producer.ProducerConfig;
 
@@ -25,7 +23,7 @@ public class KafkaProducer extends Thread
     {  
         props.put("serializer.class", "kafka.serializer.StringEncoder");  
         props.put("metadata.broker.list", "127.0.0.1:9092");  
-        producer = new kafka.javaapi.producer.Producer<Integer, String>(new ProducerConfig(props));  
+        producer = new Producer<Integer, String>(new ProducerConfig(props));  
         this.topic = topic;  
     }  
   

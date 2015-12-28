@@ -3,10 +3,6 @@
  */
 package com.kk;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.messaging.MessageChannel;
-import org.springframework.messaging.support.GenericMessage;
-
 /**
  * @author kk
  *

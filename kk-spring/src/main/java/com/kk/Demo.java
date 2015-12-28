@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.kk.trading.service.Order;
-import com.kk.trading.service.OrderServiceImpl;
+import com.kk.trading.service.OrderService;
 
 /**
  * @author kk
@@ -23,7 +23,7 @@ public class Demo {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		OrderServiceImpl orderService = (OrderServiceImpl) context.getBean("orderService");
+		OrderService orderService = (OrderService) context.getBean("orderService");
 		
 		Order order = new Order();
 		order.setOrderId("002");
