@@ -472,3 +472,166 @@ Bean '(inner bean)#50b472aa' of type [class org.springframework.aop.aspectj.Aspe
 [INFO] 2015-12-25 17:26:18.904 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
 Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
+[INFO] 2015-12-29 15:45:39.369 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@442d9b6e: startup date [Tue Dec 29 15:45:39 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-29 15:45:39.542 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-29 15:45:40.973 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#16267862' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:45:41.377 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:45:41.381 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#63355449' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:45:41.382 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:45:41.387 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#635eaaf1' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:45:41.391 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:45:41.393 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#50b472aa' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:45:41.395 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:41.297 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2108b5: startup date [Tue Dec 29 15:48:41 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-29 15:48:41.370 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-29 15:48:41.983 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#242b836' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:42.189 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:42.192 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#60410cd' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:42.194 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:42.232 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#ae3540e' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:42.237 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:42.240 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#36a5cabc' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 15:48:42.242 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:09.770 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2108b5: startup date [Tue Dec 29 17:39:09 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-29 17:39:09.972 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-29 17:39:11.028 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#242b836' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:11.456 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:11.459 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#60410cd' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:11.460 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:11.469 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#ae3540e' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:11.473 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:11.476 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean '(inner bean)#36a5cabc' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:39:11.478 main [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:309)]
+Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[INFO] 2015-12-29 17:46:11.809 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2108b5: startup date [Tue Dec 29 17:46:11 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-29 17:46:11.894 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-29 17:53:35.918 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@442d9b6e: startup date [Tue Dec 29 17:53:35 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-29 17:53:35.971 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[WARN] 2015-12-29 17:53:36.716 main [org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)]
+Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:548)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.kk.Demo.main(Demo.java:24)
+Caused by: java.lang.NullPointerException
+	at com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:69)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	... 11 more
+[INFO] 2015-12-29 17:54:17.156 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@442d9b6e: startup date [Tue Dec 29 17:54:17 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-29 17:54:17.240 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-29 17:55:11.483 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@442d9b6e: startup date [Tue Dec 29 17:55:11 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-29 17:55:11.553 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-30 11:34:05.946 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@442d9b6e: startup date [Wed Dec 30 11:34:05 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-30 11:34:06.142 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-30 11:35:45.367 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@442d9b6e: startup date [Wed Dec 30 11:35:45 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-30 11:35:45.425 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-30 11:35:45.995 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:45)]
+ MessageListener found:com.kk.trading.service.OrderListener@2ea6137
+
+[INFO] 2015-12-30 11:44:11.434 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Dec 30 11:44:11 CST 2015]; root of context hierarchy
+
+[INFO] 2015-12-30 11:44:11.576 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2015-12-30 11:44:12.433 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:47)]
+ MessageListener found:com.kk.trading.service.OrderListener@3ec300f1
+
+[INFO] 2015-12-30 11:44:12.435 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:79)]
+Register listener com.kk.trading.service.OrderListener@3ec300f1 on topic topic123
+

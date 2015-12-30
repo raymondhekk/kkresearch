@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message;
+package com.kk.message.sender;
 
 /**
  * @author kk
@@ -10,4 +10,6 @@ package com.kk.message;
 public interface MessageSender {
 	
 	public void send(String topic,String msg);
+	
+	public void send(String topic,String key, String msg) ;
 }

@@ -21,7 +21,7 @@ http://www.springframework.org/schema/task http://www.springframework.org/schema
 			</property >
 		</bean>
 		
-		<bean id="messagSender" class="com.kk.message.KafkaSender">
+		<bean id="messageSender" class="com.kk.message.KafkaSender">
 			<property name="properties" ref="producerProperties"/>
 		</bean> 
 		

@@ -1,14 +1,13 @@
 /**
  * 
  */
-package com.kk.message;
+package com.kk.message.sender;
 
 import java.util.Properties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.stereotype.Component;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
@@ -18,7 +17,7 @@ import kafka.producer.ProducerConfig;
  * @author kk
  *
  */
-@Component
+//@Component
 public class KafkaSender implements MessageSender , InitializingBean {
 	
 	private static Logger log = LoggerFactory.getLogger(KafkaSender.class);
@@ -35,9 +34,27 @@ public class KafkaSender implements MessageSender , InitializingBean {
 	 */
 	@Override
 	public void send(String topic, String msg) {
-		this.producer.send(new KeyedMessage<String, String>(topic, msg));
-		if(log.isDebugEnabled()) {
-			log.debug("Send msg. topic='{}',msg='{}'",topic,msg);
+		send(topic, null, msg);
+	}
+	
+	/**
+	 * 发送消息
+	 * @param topic 消息主题
+	 * @param key   消息键值
+	 * @param msg   消息内容
+	 */
+	@Override
+	public void send(String topic,String key, String msg) {
+		KeyedMessage<String,String> keyedMessage = null;
+		
+		if( key == null) 
+			keyedMessage = new KeyedMessage<>(topic, key,msg);
+		else
+			keyedMessage = new KeyedMessage<>(topic,msg);
+		
+		this.producer.send( keyedMessage);
+		if(log.isInfoEnabled()) {
+			log.info("Send msg. topic='{}',key='{}',msg='{}'",topic,key,msg);
 		}
 	}
 	

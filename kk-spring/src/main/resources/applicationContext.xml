@@ -19,7 +19,7 @@
     
 	<context:component-scan base-package="com.kk" />
     
-    	    <!-- 回调处理器.-->
+     <!-- 消息监听者收集器-->
      <bean id="messageListenerBeanPostProcessor" class="com.kk.message.MessageListenerBeanPostProcessor" >
      </bean>
      
@@ -36,31 +36,27 @@
     <!-- 定义Common -->  
     <bean id="orderService" class="com.kk.trading.service.OrderServiceImpl" />  
     
-	<aop:config>
-		<aop:pointcut id="log" expression="execution(* com.kk..service.*ServiceImpl.*(..))"/> 
-		<aop:pointcut id="beforeSendMsg" expression="@annotation(com.kk.BeforeSendMsg)"/> 
-		<aop:pointcut id="afterSendMsg" expression="@annotation(com.kk.AfterSendMsg)"/> 
+<!-- 	<aop:config> -->
+<!-- 		<aop:pointcut id="log" expression="execution(* com.kk..service.*ServiceImpl.*(..))"/>  -->
+<!-- 		<aop:pointcut id="beforeSendMsg" expression="@annotation(com.kk.BeforeSendMsg)"/>  -->
+<!-- 		<aop:pointcut id="afterSendMsg" expression="@annotation(com.kk.AfterSendMsg)"/>  -->
 		
-		<aop:aspect id="logging2" ref="logAroundAdvice2">
-<!-- 			<aop:before pointcut-ref="log" method="before"/> -->
-<!-- 			<aop:after-returning pointcut-ref="log" method="afterReturning"/> -->
-			<aop:around pointcut-ref="log" method="around" />
-		</aop:aspect>
+<!-- 		<aop:aspect id="logging2" ref="logAroundAdvice2"> -->
+<!-- 			<aop:around pointcut-ref="log" method="around" /> -->
+<!-- 		</aop:aspect> -->
 		
-		<aop:aspect id="logging3" ref="logAroundAdvice3">
-			<aop:around pointcut-ref="log" method="around" />
-		</aop:aspect>
+<!-- 		<aop:aspect id="logging3" ref="logAroundAdvice3"> -->
+<!-- 			<aop:around pointcut-ref="log" method="around" /> -->
+<!-- 		</aop:aspect> -->
 		
-		<aop:aspect id="beforeSendMsgAdviceAspect" ref="sendMsgAdvice">
-			<aop:around pointcut-ref="beforeSendMsg" method="around" />
-		</aop:aspect>
+<!-- 		<aop:aspect id="beforeSendMsgAdviceAspect" ref="sendMsgAdvice"> -->
+<!-- 			<aop:around pointcut-ref="beforeSendMsg" method="around" /> -->
+<!-- 		</aop:aspect> -->
 		
-		<aop:aspect id="afterSendMsgAdviceAspect" ref="sendMsgAdvice">
-			<aop:around pointcut-ref="afterSendMsg" method="around" />
-		</aop:aspect>
-		
-		
-	 </aop:config>
+<!-- 		<aop:aspect id="afterSendMsgAdviceAspect" ref="sendMsgAdvice"> -->
+<!-- 			<aop:around pointcut-ref="afterSendMsg" method="around" /> -->
+<!-- 		</aop:aspect> -->
+<!-- 	 </aop:config> -->
 	 
 
 </beans>

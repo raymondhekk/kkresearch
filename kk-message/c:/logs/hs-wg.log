@@ -1261,3 +1261,1458 @@ Producer sent messages with correlation id 6 for topics [topic123,0] to broker 0
 [DEBUG] 2015-12-25 19:45:27.345 main [com.kk.message.KafkaSender.send(KafkaSender.java:40)]
 Send msg. topic='topic123',msg='message123'
 
+[INFO] 2015-12-30 11:09:15.256 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:60)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 11:47:05.718 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 11:47:07.409 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 11:47:07.545 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 11:47:07.546 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 11:47:07.547 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:47:07.548 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 11:47:07.548 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 11:47:07.766 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447227759-d677a436], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:47:07.800 ZkClient-EventThread-13-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[DEBUG] 2015-12-30 11:47:07.800 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 11:47:07.842 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 11:47:07.842 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 11:47:07.843 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 11:47:07.843 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 11:47:07.844 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 11:47:07.845 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 11:47:07.849 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 11:47:07.849 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 11:47:07.850 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 11:47:07.851 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 11:47:07.851 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 11:47:07.852 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 11:47:07.852 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 11:47:07.853 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 11:47:07.853 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 11:47:07.855 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@62e7f11d
+
+[DEBUG] 2015-12-30 11:47:07.914 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 11:47:07.915 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 11:47:07.931 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 11:47:08.118 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 11:47:08.141 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0012, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 11:47:08.144 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 11:47:08.144 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 11:47:08.145 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 11:47:08.145 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 11:47:08.178 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 11:47:08.188 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447227759-d677a436], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 11:47:08.195 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 11:47:08.238 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 11:49:04.602 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 11:49:05.404 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 11:49:05.434 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 11:49:05.435 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 11:49:05.435 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:49:05.435 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 11:49:05.436 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 11:49:05.518 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447345517-f7d36999], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:49:05.536 ZkClient-EventThread-13-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[DEBUG] 2015-12-30 11:49:05.537 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 11:49:05.551 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 11:49:05.552 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 11:49:05.552 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 11:49:05.553 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 11:49:05.554 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 11:49:05.554 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 11:49:05.557 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 11:49:05.558 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 11:49:05.559 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 11:49:05.559 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 11:49:05.560 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 11:49:05.560 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 11:49:05.561 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 11:49:05.561 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 11:49:05.561 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 11:49:05.563 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@62e7f11d
+
+[DEBUG] 2015-12-30 11:49:05.595 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 11:49:05.596 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 11:49:05.599 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 11:49:05.699 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 11:49:05.713 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0013, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 11:49:05.715 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 11:49:05.716 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 11:49:05.716 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 11:49:05.716 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 11:49:05.726 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 11:49:05.727 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447345517-f7d36999], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 11:49:05.728 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 11:49:25.613 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 11:49:26.452 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 11:49:26.505 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 11:49:26.506 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 11:49:26.506 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:49:26.507 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 11:49:26.508 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 11:49:26.588 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447366587-9a186bfe], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[DEBUG] 2015-12-30 11:49:26.599 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 11:49:26.599 ZkClient-EventThread-13-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] 2015-12-30 11:49:26.608 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 11:49:26.608 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 11:49:26.609 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 11:49:26.609 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 11:49:26.609 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 11:49:26.610 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 11:49:26.612 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 11:49:26.613 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 11:49:26.614 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 11:49:26.614 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 11:49:26.614 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 11:49:26.615 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 11:49:26.615 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 11:49:26.615 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 11:49:26.615 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 11:49:26.617 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@62e7f11d
+
+[DEBUG] 2015-12-30 11:49:26.634 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 11:49:26.634 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 11:49:26.637 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 11:49:26.715 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 11:49:26.728 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0014, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 11:49:26.730 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 11:49:26.731 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 11:49:26.731 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 11:49:26.731 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 11:49:26.741 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 11:49:26.742 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447366587-9a186bfe], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 11:49:26.743 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 11:49:26.776 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 11:55:25.598 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 11:55:27.035 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 11:55:27.164 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 11:55:27.164 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 11:55:27.165 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:55:27.165 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 11:55:27.165 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 11:55:27.273 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447727268-8e26fdd0], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[DEBUG] 2015-12-30 11:55:27.316 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 11:55:27.317 ZkClient-EventThread-13-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] 2015-12-30 11:55:27.353 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 11:55:27.353 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 11:55:27.354 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 11:55:27.354 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 11:55:27.354 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 11:55:27.355 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 11:55:27.357 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 11:55:27.357 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 11:55:27.358 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 11:55:27.358 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 11:55:27.358 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 11:55:27.359 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 11:55:27.359 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 11:55:27.359 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 11:55:27.359 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 11:55:27.361 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@55b53d44
+
+[DEBUG] 2015-12-30 11:55:27.397 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 11:55:27.398 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 11:55:27.404 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 11:55:27.514 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 11:55:27.538 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0015, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 11:55:27.541 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 11:55:27.541 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 11:55:27.542 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 11:55:27.542 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 11:55:27.554 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 11:55:27.556 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447727268-8e26fdd0], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 11:55:27.558 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 11:55:27.584 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 11:57:48.705 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 11:57:49.556 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 11:57:49.590 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 11:57:49.590 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 11:57:49.591 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:57:49.591 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 11:57:49.592 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 11:57:49.667 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447869665-7721295d], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[DEBUG] 2015-12-30 11:57:49.687 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 11:57:49.687 ZkClient-EventThread-13-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] 2015-12-30 11:57:49.703 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 11:57:49.703 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 11:57:49.704 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 11:57:49.705 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 11:57:49.706 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 11:57:49.707 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 11:57:49.711 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 11:57:49.711 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 11:57:49.712 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 11:57:49.713 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 11:57:49.713 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 11:57:49.713 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 11:57:49.714 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 11:57:49.714 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 11:57:49.715 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 11:57:49.717 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@55b53d44
+
+[INFO] 2015-12-30 11:57:49.797 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[DEBUG] 2015-12-30 11:57:49.840 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 11:57:49.848 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 11:57:49.907 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 11:57:49.919 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0016, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 11:57:49.921 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 11:57:49.921 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 11:57:49.921 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 11:57:49.921 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 11:57:49.929 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 11:57:49.930 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447869665-7721295d], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 11:57:49.932 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 11:57:49.959 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 11:58:38.302 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 11:58:57.892 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 11:58:57.969 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 11:58:57.970 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 11:58:57.971 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 11:58:57.972 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 11:58:57.973 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 11:58:58.073 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447938072-327130e0], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[DEBUG] 2015-12-30 11:58:58.089 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 11:58:58.089 ZkClient-EventThread-16-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] 2015-12-30 11:58:58.105 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 11:58:58.106 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 11:58:58.107 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 11:58:58.108 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 11:58:58.108 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 11:58:58.109 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 11:58:58.111 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 11:58:58.112 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 11:58:58.112 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 11:58:58.113 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 11:58:58.113 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 11:58:58.113 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 11:58:58.114 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 11:58:58.114 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 11:58:58.114 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 11:58:58.116 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@607fbe09
+
+[DEBUG] 2015-12-30 11:58:58.136 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 11:58:58.139 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 11:58:58.141 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 11:58:58.246 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 11:58:58.262 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0017, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 11:58:58.265 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 11:58:58.265 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 11:58:58.266 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 11:58:58.266 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 11:58:58.306 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 11:58:58.310 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451447938072-327130e0], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 11:58:58.314 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 11:58:58.380 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 12:00:08.285 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 12:01:19.736 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 12:01:20.703 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 12:01:20.735 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 12:01:20.735 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 12:01:20.736 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 12:01:20.736 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 12:01:20.737 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 12:01:20.832 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448080830-52a9ff21], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[DEBUG] 2015-12-30 12:01:20.855 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 12:01:20.855 ZkClient-EventThread-13-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] 2015-12-30 12:01:20.864 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 12:01:20.865 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 12:01:20.865 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 12:01:20.865 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 12:01:20.866 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 12:01:20.866 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 12:01:20.869 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 12:01:20.869 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 12:01:20.870 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 12:01:20.870 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 12:01:20.870 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 12:01:20.871 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 12:01:20.871 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 12:01:20.872 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 12:01:20.872 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 12:01:20.873 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@38cee291
+
+[DEBUG] 2015-12-30 12:01:20.902 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 12:01:20.903 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 12:01:20.906 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 12:01:21.012 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 12:01:21.025 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0018, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 12:01:21.028 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 12:01:21.028 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 12:01:21.029 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 12:01:21.029 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 12:01:21.044 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 12:01:21.046 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448080830-52a9ff21], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 12:01:21.051 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 12:01:21.087 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 12:01:43.391 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 12:01:44.725 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 12:01:44.768 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 12:01:44.768 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 12:01:44.769 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 12:01:44.769 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 12:01:44.770 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 12:01:44.898 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448104896-ee847d29], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[INFO] 2015-12-30 12:01:44.924 ZkClient-EventThread-16-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[DEBUG] 2015-12-30 12:01:44.924 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 12:01:44.944 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 12:01:44.945 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 12:01:44.945 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 12:01:44.945 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 12:01:44.946 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 12:01:44.946 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 12:01:44.949 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 12:01:44.950 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 12:01:44.951 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 12:01:44.951 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 12:01:44.951 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 12:01:44.952 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 12:01:44.953 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 12:01:44.953 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 12:01:44.954 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 12:01:44.956 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@61861a29
+
+[DEBUG] 2015-12-30 12:01:44.989 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 12:01:44.991 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 12:01:44.993 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 12:01:45.106 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 12:01:45.117 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a0019, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 12:01:45.119 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 12:01:45.120 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 12:01:45.120 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 12:01:45.120 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 12:01:45.129 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 12:01:45.131 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448104896-ee847d29], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 12:01:45.133 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 12:01:45.170 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{}
+
+[INFO] 2015-12-30 12:03:34.133 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 12:03:34.883 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:45)]
+ MessageListener found:com.kk.message.OrderListener@55ca8de8
+
+[INFO] 2015-12-30 12:03:34.886 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:64)]
+Register listener 'com.kk.message.OrderListener@55ca8de8' on topic 'topic123'
+
+[INFO] 2015-12-30 12:03:35.163 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 12:03:35.196 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 12:03:35.196 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 12:03:35.197 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 12:03:35.197 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 12:03:35.197 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 12:03:35.320 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[DEBUG] 2015-12-30 12:03:35.339 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 12:03:35.339 ZkClient-EventThread-13-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] 2015-12-30 12:03:35.350 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 12:03:35.351 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 12:03:35.351 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 12:03:35.351 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 12:03:35.353 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 12:03:35.353 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 12:03:35.354 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 12:03:35.355 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 12:03:35.355 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 12:03:35.355 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 12:03:35.356 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 12:03:35.356 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 12:03:35.356 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 12:03:35.357 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 12:03:35.357 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 12:03:35.359 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@3e27ba32
+
+[INFO] 2015-12-30 12:03:35.394 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[DEBUG] 2015-12-30 12:03:35.396 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 12:03:35.397 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 12:03:35.490 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 12:03:35.500 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a001a, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 12:03:35.501 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 12:03:35.502 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 12:03:35.502 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 12:03:35.502 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 12:03:35.513 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 12:03:35.514 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 12:03:35.516 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 12:03:35.540 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{topic123=com.kk.message.OrderListener@55ca8de8}
+
+[INFO] 2015-12-30 12:03:35.541 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:85)]
+Submit a consumer thread com.kk.message.client.ConsumerLauncher$ConsumerThread@4a003cbe
+
+[INFO] 2015-12-30 12:03:35.542 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 12:03:35.543 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 12:03:35.543 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 12:03:35.544 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 12:03:35.544 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 12:03:35.545 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 12:03:35.547 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[DEBUG] 2015-12-30 12:03:35.547 pool-2-thread-1 [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 12:03:35.547 ZkClient-EventThread-19-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] 2015-12-30 12:03:35.548 pool-2-thread-1 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@1dbf9441
+
+[DEBUG] 2015-12-30 12:03:35.548 pool-2-thread-1 [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 12:03:35.549 pool-2-thread-1 [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 12:03:35.549 pool-2-thread-1-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 12:03:35.549 pool-2-thread-1-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 12:03:35.556 pool-2-thread-1-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a001b, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 12:03:35.556 pool-2-thread-1-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 12:03:35.556 pool-2-thread-1-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 12:03:35.557 pool-2-thread-1-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 12:03:35.557 pool-2-thread-1 [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 12:03:35.558 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 12:03:35.558 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 12:03:35.559 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[DEBUG] 2015-12-30 12:03:35.569 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], entering consume 
+
+[INFO] 2015-12-30 12:03:35.653 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], begin registering consumer group1_kkdeMacBook-Air.local-1451448215547-77fc7a95 in ZK
+
+[INFO] 2015-12-30 12:03:35.833 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], end registering consumer group1_kkdeMacBook-Air.local-1451448215547-77fc7a95 in ZK
+
+[INFO] 2015-12-30 12:03:35.854 group1_kkdeMacBook-Air.local-1451448215547-77fc7a95_watcher_executor [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], starting watcher executor thread for consumer group1_kkdeMacBook-Air.local-1451448215547-77fc7a95
+
+[DEBUG] 2015-12-30 12:03:35.879 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], Adding topicThreadId (topic123,group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-0) and queue [] to topicThreadIdAndQueues data structure
+
+[DEBUG] 2015-12-30 12:03:35.894 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], adding topic topic123 and 1 streams to map.
+
+[DEBUG] 2015-12-30 12:03:35.916 pool-2-thread-1 [org.I0Itec.zkclient.ZkClient.subscribeDataChanges(ZkClient.java:137)]
+Subscribed data changes for /brokers/topics/topic123
+
+[INFO] 2015-12-30 12:03:35.930 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], begin rebalancing consumer group1_kkdeMacBook-Air.local-1451448215547-77fc7a95 try #0
+
+[INFO] 2015-12-30 12:03:36.295 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451448215557] Stopping leader finder thread
+
+[INFO] 2015-12-30 12:03:36.296 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451448215557] Stopping all fetchers
+
+[INFO] 2015-12-30 12:03:36.300 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451448215557] All connections stopped
+
+[INFO] 2015-12-30 12:03:36.307 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], Cleared all relevant queues for this fetcher
+
+[DEBUG] 2015-12-30 12:03:36.309 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Clearing the current data chunk for this consumer iterator
+
+[INFO] 2015-12-30 12:03:36.310 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], Cleared the data chunks in all the consumer message iterators
+
+[INFO] 2015-12-30 12:03:36.314 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], Committing all offsets after clearing the fetcher queues
+
+[DEBUG] 2015-12-30 12:03:36.318 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], No updates to offsets since last commit.
+
+[INFO] 2015-12-30 12:03:36.322 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], Releasing partition ownership
+
+[DEBUG] 2015-12-30 12:03:36.351 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Partition map for /brokers/topics/topic123 is Map(0 -> List(0))
+
+[DEBUG] 2015-12-30 12:03:36.355 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+partition assignment of /brokers/topics/topic123 is Map(0 -> List(0))
+
+[INFO] 2015-12-30 12:03:36.391 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer group1_kkdeMacBook-Air.local-1451448215547-77fc7a95 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-0)
+
+[INFO] 2015-12-30 12:03:36.394 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-0 attempting to claim partition 0
+
+[DEBUG] 2015-12-30 12:03:36.444 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+initial consumer offset of topic123:0: fetched offset = -1: consumed offset = -1 is -1
+
+[DEBUG] 2015-12-30 12:03:36.445 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+initial fetch offset of topic123:0: fetched offset = -1: consumed offset = -1 is -1
+
+[DEBUG] 2015-12-30 12:03:36.446 pool-2-thread-1 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], topic123:0: fetched offset = -1: consumed offset = -1 selected new offset -1
+
+[INFO] 2015-12-30 12:03:36.467 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-0 successfully owned partition 0 for topic topic123
+
+[DEBUG] 2015-12-30 12:03:36.518 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], No updates to offsets since last commit.
+
+[INFO] 2015-12-30 12:03:36.550 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], Consumer group1_kkdeMacBook-Air.local-1451448215547-77fc7a95 selected partitions : topic123:0: fetched offset = -1: consumed offset = -1
+
+[INFO] 2015-12-30 12:03:36.554 group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-leader-finder-thread [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-leader-finder-thread], Starting 
+
+[INFO] 2015-12-30 12:03:36.562 pool-2-thread-1 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448215547-77fc7a95], end rebalancing consumer group1_kkdeMacBook-Air.local-1451448215547-77fc7a95 try #0
+
+[INFO] 2015-12-30 12:03:36.598 group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-leader-finder-thread [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 12:03:36.598 group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-leader-finder-thread [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to group1
+
+[INFO] 2015-12-30 12:03:36.599 group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-leader-finder-thread [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to [fe80:0:0:0:f0dd:ccff:fe1b:4654%7]:9092
+
+[INFO] 2015-12-30 12:03:36.599 group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-leader-finder-thread [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] 2015-12-30 12:03:36.670 group1_kkdeMacBook-Air.local-1451448215547-77fc7a95-leader-finder-thread [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:fe80:0:0:0:f0dd:ccff:fe1b:4654%7,port:9092 with correlation id 0 for 1 topic(s) Set(topic123)
+
+[DEBUG] 2015-12-30 12:03:37.522 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:03:38.517 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:03:39.520 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:03:40.521 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:03:41.517 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:03:42.519 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448215318-9a41b0a8], No updates to offsets since last commit.
+
+[INFO] 2015-12-30 12:03:48.912 main [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] 2015-12-30 12:03:56.832 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:45)]
+ MessageListener found:com.kk.message.OrderListener@61710c6
+
+[INFO] 2015-12-30 12:05:10.854 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:64)]
+Register listener 'com.kk.message.OrderListener@61710c6' on topic 'topic123'
+
+[INFO] 2015-12-30 12:05:21.818 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] 2015-12-30 12:05:21.863 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] 2015-12-30 12:05:21.863 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to group1
+
+[INFO] 2015-12-30 12:05:21.864 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] 2015-12-30 12:05:21.865 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] 2015-12-30 12:05:21.865 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] 2015-12-30 12:05:22.013 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[INFO] 2015-12-30 12:05:22.039 ZkClient-EventThread-16-127.0.0.1:2181 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[DEBUG] 2015-12-30 12:05:22.040 main [org.I0Itec.zkclient.ZkConnection.connect(ZkConnection.java:63)]
+Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+
+[INFO] 2015-12-30 12:05:22.061 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] 2015-12-30 12:05:22.061 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.165
+
+[INFO] 2015-12-30 12:05:22.062 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] 2015-12-30 12:05:22.062 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] 2015-12-30 12:05:22.065 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] 2015-12-30 12:05:22.066 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] 2015-12-30 12:05:22.067 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] 2015-12-30 12:05:22.068 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] 2015-12-30 12:05:22.068 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] 2015-12-30 12:05:22.069 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] 2015-12-30 12:05:22.070 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] 2015-12-30 12:05:22.070 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] 2015-12-30 12:05:22.071 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] 2015-12-30 12:05:22.071 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] 2015-12-30 12:05:22.072 main [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] 2015-12-30 12:05:22.074 main [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@f19c9d2
+
+[DEBUG] 2015-12-30 12:05:22.112 main [org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:878)]
+Awaiting connection to Zookeeper server
+
+[DEBUG] 2015-12-30 12:05:22.115 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:628)]
+Waiting for keeper state SyncConnected
+
+[INFO] 2015-12-30 12:05:22.117 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] 2015-12-30 12:05:22.218 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] 2015-12-30 12:05:22.229 main-SendThread(127.0.0.1:2181) [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151d8f4d54a001c, negotiated timeout = 40000
+
+[DEBUG] 2015-12-30 12:05:22.231 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:351)]
+Received event: WatchedEvent state:SyncConnected type:None path:null
+
+[INFO] 2015-12-30 12:05:22.232 main-EventThread [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[DEBUG] 2015-12-30 12:05:22.232 main-EventThread [org.I0Itec.zkclient.ZkClient.process(ZkClient.java:395)]
+Leaving process event
+
+[DEBUG] 2015-12-30 12:05:22.232 main [org.I0Itec.zkclient.ZkClient.waitForKeeperState(ZkClient.java:638)]
+State is SyncConnected
+
+[DEBUG] 2015-12-30 12:05:22.240 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Initializing task scheduler.
+
+[INFO] 2015-12-30 12:05:22.243 main [kafka.utils.Logging$class.info(Logging.scala:68)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], starting auto committer every 1000 ms
+
+[DEBUG] 2015-12-30 12:05:22.244 main [kafka.utils.Logging$class.debug(Logging.scala:52)]
+Scheduling task kafka-consumer-autocommit with initial delay 1000 ms and period 1000 ms.
+
+[INFO] 2015-12-30 12:05:22.287 main [com.kk.message.client.ConsumerLauncher.start(ConsumerLauncher.java:72)]
+ListenerRegistry listeners:{topic123=com.kk.message.OrderListener@61710c6}
+
+[DEBUG] 2015-12-30 12:05:23.251 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:24.249 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:25.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:26.251 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:27.251 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:28.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:29.251 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:30.249 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:31.248 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:32.248 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:33.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:34.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:35.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:36.248 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:37.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:38.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:39.248 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:40.248 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:41.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:42.249 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:43.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:44.250 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:45.250 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:46.251 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:47.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:48.246 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+
+[DEBUG] 2015-12-30 12:05:49.251 kafka-consumer-scheduler-0 [kafka.utils.Logging$class.debug(Logging.scala:52)]
+[group1_kkdeMacBook-Air.local-1451448322011-9e98fc78], No updates to offsets since last commit.
+

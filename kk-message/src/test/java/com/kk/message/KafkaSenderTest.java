@@ -4,12 +4,13 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
+import com.kk.message.sender.MessageSender;
+
 import junit.textui.TestRunner;
 
 
 public class KafkaSenderTest extends AbstractDependencyInjectionSpringContextTests {
 	
-	@Autowired
 	private MessageSender messageSender;
 	
 	public void setMessageSender(MessageSender messageSender) {
@@ -18,15 +19,20 @@ public class KafkaSenderTest extends AbstractDependencyInjectionSpringContextTes
 	
 	@Override
 	protected String[] getConfigLocations() {
-		return new String[]{ "classpath:context.xml"};
+		return new String[]{ "classpath:producer-context.xml"};
 	}
 	
 	@Test
 	public void test() {
 		
 		String topic = "topic123";
-		String msg = "message123";
-		messageSender.send(topic, msg);
+		String msgBase = "message";
+		for (int i = 0; i < 10 ; i++) {
+			String key = msgBase + i +"_" + System.currentTimeMillis();
+			String msg = key;
+			messageSender.send(topic, key, msg);
+		}
+		
 	}
 	
 	public static void main(String[] args) {
