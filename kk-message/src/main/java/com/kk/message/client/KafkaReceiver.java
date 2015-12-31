@@ -8,20 +8,26 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.alibaba.fastjson.JSON;
 import com.kk.message.ListenerRegistry;
-import com.kk.message.Message;
 import com.kk.message.MessageCenter;
 import com.kk.message.MessageListener;
+import com.kk.message.MsgBean;
+import com.kk.message.MsgBeanDecoder;
 
 import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
+import kafka.consumer.Whitelist;
 import kafka.javaapi.consumer.ConsumerConnector;
 import kafka.message.MessageAndMetadata;
+import kafka.serializer.Decoder;
+import kafka.serializer.DefaultDecoder;
 
 
 /**
@@ -65,46 +71,33 @@ public class KafkaReceiver implements MessageReceiver {
 //			log.error("KafkaReceiver consumer not init! Maybe init() method should be called first!");
 			init();
 		}
-		int batchSize = 1;
-		   Map<String, Integer> topicCountMap = buildTopicCountMap(batchSize);  
-	       Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = consumer.createMessageStreams(topicCountMap);  
-	      
-	       //遍历所有监听的topic
-	       for(String topicKey: consumerMap.keySet()) {
-	    	  List<KafkaStream<byte[], byte[]>> streamList = consumerMap.get(topicKey);
-	    	  processStreamsByTopic(topicKey, streamList);
-	       }
-	       
-	       
-//	       KafkaStream<byte[], byte[]> stream = consumerMap.get(this.topic).get(0);  
-//	       ConsumerIterator<byte[], byte[]> it = stream.iterator();  
-//	       while (it.hasNext()) {  
-//	    	   
-//	    	   MessageAndMetadata<byte[],byte[]> msgAndMeta = it.next();
-//	    	   
-//	    	   byte[] keyBytes = msgAndMeta.key();
-//	    	   byte[] messageBytes = msgAndMeta.message();
-//	    	   
-//	    	   try {
-//		    	   String key = keyBytes!=null ? new String(keyBytes) : null;
-//		    	   String message = new String(messageBytes);
-//		    	   
-//		           if(log.isInfoEnabled())
-//		        	   log.info("*********** 收到消息:key={},message={}" , key ,message);  
-//		           
-//		           //put to local buffer
-//		           messageDispatcher.getLocalConsumerMsgCenter().putMessage( message );
-//		           
-//	           } catch (Exception e) {  
-//	               e.printStackTrace();  
-//	           }  
-//	       }  
+		
+	   int partitions = 1;
+	   String topicString = buildTopicsString();
+//		   Map<String, Integer> topicCountMap = buildTopicCountMap(partitions);  
+//	       Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = consumer.createMessageStreams(topicCountMap);  
+      
+       Whitelist topicFilter = new Whitelist( topicString );
+       List<KafkaStream<byte[], byte[]>> streamList = consumer.createMessageStreamsByFilter(topicFilter,partitions);
+       
+       if( org.apache.commons.collections.CollectionUtils.isEmpty( streamList ))
+		try {
+			TimeUnit.MILLISECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+       processStreamsByTopic("未指定", streamList);
+	
 	}
 
 	private void processStreamsByTopic(String topicKey,List<KafkaStream<byte[], byte[]>> streamList) {
 		//遍历stream
+		int i = 0;
 		  for (KafkaStream<byte[], byte[]> stream : streamList) {
-			
+			  
+			  if(log.isDebugEnabled())
+    			  log.debug("处理消息流KafkaStream,topic={}, No.={}" ,topicKey ,i++);
+			  
 			  ConsumerIterator<byte[], byte[]> consumerIterator = stream.iterator();
 			  
 			  processStreamByConsumer(topicKey, consumerIterator);
@@ -113,6 +106,8 @@ public class KafkaReceiver implements MessageReceiver {
 	}
 
 	private void processStreamByConsumer(String topicKey,ConsumerIterator<byte[], byte[]> consumerIterator) {
+		
+		int i = 0;
 		while(consumerIterator.hasNext() ){
 			  MessageAndMetadata<byte[],byte[]> msgAndMeta = consumerIterator.next(); 
 			  
@@ -120,19 +115,22 @@ public class KafkaReceiver implements MessageReceiver {
 			   byte[] messageBytes = msgAndMeta.message();
 			   
 			   try {
-		    	   String key = keyBytes!=null ? new String(keyBytes) : null;
-		    	   String msgString = new String(messageBytes);
+		    	   String key = keyBytes!=null ? new String(keyBytes,"UTF-8") : null;
+		    	   String msgString = new String(messageBytes,"UTF-8");
 		    	   
-		           if(log.isInfoEnabled())
-		        	   log.info("*********** 收到消息:key={},message={}" , key ,msgString);  
+		           if(log.isDebugEnabled())
+		        	   log.debug("*********** 收到消息:No.={},key={},message={}" ,i++, key ,msgString);  
 		           
-		           Message<String,String> message = new Message<>();
-		           message.setTopic(topicKey);
-		           message.setConsumeTime(new Date());
-		           message.setKey(key);
-		           message.setValue(msgString);
+//		           MsgBean<String,String> msgBean = new MsgBean<>();
+//		           msgBean.setTopic( msgAndMeta.topic() );
+//		           msgBean.setConsumeTime(new Date());
+//		           msgBean.setKey(key);
+//		           msgBean.setValue(msgString);
+		           
+		           @SuppressWarnings("unchecked")
+		           MsgBean<String,String> msgBean = JSON.parseObject(msgString, MsgBean.class);
 		           //put to local buffer
-		           messageCenter.putMessage( message );
+		           messageCenter.putMessage( msgBean );
 		           
 		       } catch (Exception e) {  
 		           e.printStackTrace();  
@@ -145,15 +143,34 @@ public class KafkaReceiver implements MessageReceiver {
 	 * @param batchSize
 	 * @return
 	 */
-	private Map<String, Integer> buildTopicCountMap(int batchSize) {
+	private Map<String, Integer> buildTopicCountMap(int partitions) {
 		Map<String, Integer> topicCountMap = new HashMap<>();  
 	    
 	    Map<String,MessageListener> listnersMap = listenerRegistry.getListenerMap();
 	    
 	    for(String key: listnersMap.keySet()) {
-	    	topicCountMap.put(key, batchSize);
+	    	topicCountMap.put(key, partitions);
 	    }
 		return topicCountMap;
+	}
+	
+	/**
+	 * topic string, e.g.  "topic123,topic456,topic789"
+	 * @param partitions
+	 * @return
+	 */
+	private String buildTopicsString() {
+	    
+	    final Map<String,MessageListener> listnersMap = listenerRegistry.getListenerMap();
+	    
+	    String topicStr = "";
+	    int i = 0;
+	    int size = listnersMap.keySet().size();
+	    for(String key: listnersMap.keySet()) {
+	    	topicStr += key;
+	    	if(i++ < (size-1 )) topicStr +=",";
+	    }
+		return topicStr;
 	}
 	
    private  ConsumerConfig createConsumerConfig()  

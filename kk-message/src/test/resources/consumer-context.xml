@@ -22,10 +22,10 @@
 			<property name = "properties" >
 				<props >
 					<prop key = "zookeeper.connect" >127.0.0.1:2181</prop>	
-					<prop key = "group.id" >group1</prop >		
-					<prop key = "zookeeper.session.timeout.ms" > 40000 </prop>	
-					<prop key = "zookeeper.sync.time.ms" >200</prop>	
-					<prop key = "auto.commit.interval.ms" > 1000 </prop>	
+					<prop key = "group.id" >customer_group1</prop>		
+					<prop key = "zookeeper.session.timeout.ms"> 40000 </prop>	
+					<prop key = "zookeeper.sync.time.ms">200</prop>	
+					<prop key = "auto.commit.interval.ms"> 1000 </prop>	
 				</props>	
 			</property>
 		</bean>

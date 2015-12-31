@@ -11,5 +11,5 @@ public interface MessageListener {
 	
 	public String getTopic();
 	
-	public String onMessage(Object msg);
+	public void onMessage(Object msg);
 }

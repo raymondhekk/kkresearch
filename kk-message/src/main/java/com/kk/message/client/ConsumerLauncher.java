@@ -13,6 +13,7 @@ import com.kk.message.ListenerRegistry;
 import com.kk.message.MessageCenter;
 import com.kk.message.MessageDispatcher;
 import com.kk.message.MessageListener;
+import com.kk.message.NamedThreadFactory;
 
 /**
  * 
@@ -39,14 +40,13 @@ public class ConsumerLauncher {
 	 * @author kk
 	 *
 	 */
-	public  static class MessageReceiverThread extends Thread {
+	public  static class MessageReceiverThread implements Runnable {
 		
 		private Properties properties;
 		private  MessageCenter messageCenter ;
 		private ListenerRegistry listenerRegistry;
 		
 		public MessageReceiverThread( Properties properties,  MessageCenter messageCenter ,ListenerRegistry listenerRegistry) {
-			super("MessageReceiverThread");
 			this.properties = properties;
 			this.messageCenter = messageCenter;
 			this.listenerRegistry = listenerRegistry;
@@ -70,13 +70,12 @@ public class ConsumerLauncher {
 	 * @author kk
 	 *
 	 */
-	public static class MessageDispatcherThread extends Thread {
+	public static class MessageDispatcherThread implements Runnable {
 		
 		private MessageCenter messageCenter;
 		private ListenerRegistry listenerRegistry;
 		
 		public MessageDispatcherThread(MessageCenter messageCenter, ListenerRegistry listenerRegistry) {
-			super("MessageDispatcherThread");
 			this.messageCenter = messageCenter;
 			this.listenerRegistry = listenerRegistry;
 		}
@@ -100,14 +99,14 @@ public class ConsumerLauncher {
 		if(log.isInfoEnabled())
 			log.info("ListenerRegistry listeners:{}" ,listeners );
 		
-		int receiverCount = 2;
+		int receiverCount = 1;   //just need 1 receiver thread
 		int dispatcherCount = 2;
 		startMessageReceiver(receiverCount);
 		startMessageDispatcher(dispatcherCount);
 	}
 
 	private void startMessageReceiver( int size) {
-		ExecutorService receiverPool = Executors.newFixedThreadPool(size);
+		ExecutorService receiverPool = Executors.newFixedThreadPool(size,new NamedThreadFactory(MessageReceiverThread.class.getSimpleName()));
 		
 		for (int i = 0; i < size; i++) {
 			Runnable consumerThread =  new MessageReceiverThread(properties,this.messageCenter,this.listenerRegistry);
@@ -118,7 +117,7 @@ public class ConsumerLauncher {
 	private void startMessageDispatcher(int size) {
 		
 		//Start dispatcher thread pool
-		ExecutorService dispatcherPool = Executors.newFixedThreadPool(size);
+		ExecutorService dispatcherPool = Executors.newFixedThreadPool(size,new NamedThreadFactory(MessageDispatcherThread.class.getSimpleName()));
 		for (int i = 0; i < size; i++) {
 			MessageDispatcherThread messageDispatcherThread = new MessageDispatcherThread(this.messageCenter,this.listenerRegistry);
 			dispatcherPool.execute(messageDispatcherThread);

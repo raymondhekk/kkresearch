@@ -3,11 +3,15 @@
  */
 package com.kk.message.sender;
 
+import java.util.Date;
 import java.util.Properties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
+
+import com.alibaba.fastjson.JSON;
+import com.kk.message.MsgBean;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
@@ -47,14 +51,22 @@ public class KafkaSender implements MessageSender , InitializingBean {
 	public void send(String topic,String key, String msg) {
 		KeyedMessage<String,String> keyedMessage = null;
 		
+		MsgBean<String, String> msgBean = new MsgBean<>();
+		msgBean.setTopic(topic);
+		msgBean.setKey(key);
+		msgBean.setValue( msg );
+		msgBean.setProduceTime(new Date());
+		
+		String json = JSON.toJSONString(msgBean);
 		if( key == null) 
-			keyedMessage = new KeyedMessage<>(topic, key,msg);
+			keyedMessage = new KeyedMessage<>(topic, key,json);
 		else
-			keyedMessage = new KeyedMessage<>(topic,msg);
+			keyedMessage = new KeyedMessage<>(topic,json);
 		
 		this.producer.send( keyedMessage);
-		if(log.isInfoEnabled()) {
-			log.info("Send msg. topic='{}',key='{}',msg='{}'",topic,key,msg);
+		
+		if(log.isDebugEnabled()) {
+			log.debug("发送消息. topic='{}',key='{}',msg='{}',json='{}'",topic,key,msg,json);
 		}
 	}
 	

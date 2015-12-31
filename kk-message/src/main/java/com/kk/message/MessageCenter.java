@@ -2,8 +2,8 @@ package com.kk.message;
 
 public interface MessageCenter {
 
-	Message<String, String>  takeMessage();
+	MsgBean<String, String>  takeMessage();
 
-	void putMessage(Message<String, String>  msg);
+	void putMessage(MsgBean<String, String>  msg);
 
 }

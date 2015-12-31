@@ -25,13 +25,24 @@ public class KafkaSenderTest extends AbstractDependencyInjectionSpringContextTes
 	@Test
 	public void test() {
 		
-		String topic = "topic123";
-		String msgBase = "message";
-		for (int i = 0; i < 10 ; i++) {
-			String key = msgBase + i +"_" + System.currentTimeMillis();
+		String topic1 = "topic123";
+		String msgBase1 = "message";
+		
+		int n = 10;
+		for (int i = 0; i < n ; i++) {
+			String key = msgBase1 + i +"_" + System.currentTimeMillis();
 			String msg = key;
-			messageSender.send(topic, key, msg);
+			messageSender.send(topic1, key, msg);
 		}
+		
+		String topic2 = "topic789";
+		String msgBase2 = "orderId_";
+		for (int i = 0; i < n ; i++) {
+			String key = msgBase2 + i +"_" + System.currentTimeMillis();
+			String msg = key;
+			messageSender.send(topic2, key, msg);
+		}
+		
 		
 	}
 	
