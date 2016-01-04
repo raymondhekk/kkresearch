@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message;
+package com.zhaimi.message;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kk.message.client.KafkaReceiver;
+import com.zhaimi.message.client.KafkaReceiver;
 
 /**
  * @author kk

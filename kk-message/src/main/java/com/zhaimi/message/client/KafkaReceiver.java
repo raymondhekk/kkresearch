@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message.client;
+package com.zhaimi.message.client;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -14,11 +14,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSON;
-import com.kk.message.ListenerRegistry;
-import com.kk.message.MessageCenter;
-import com.kk.message.MessageListener;
-import com.kk.message.MsgBean;
-import com.kk.message.MsgBeanDecoder;
+import com.zhaimi.message.ListenerRegistry;
+import com.zhaimi.message.MessageCenter;
+import com.zhaimi.message.MessageListener;
+import com.zhaimi.message.MsgBean;
+import com.zhaimi.message.MsgBeanDecoder;
 
 import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;

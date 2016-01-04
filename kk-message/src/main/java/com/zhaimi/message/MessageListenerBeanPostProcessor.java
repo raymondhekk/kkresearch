@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message;
+package com.zhaimi.message;
 
 import java.lang.reflect.Method;
 
@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.util.ReflectionUtils;
 
-import com.kk.message.client.ConsumerLauncher;
+import com.zhaimi.message.client.ConsumerLauncher;
 /**
  * MessageListenerBeanPostProcessor
  * @author kk

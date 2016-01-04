@@ -1,10 +1,10 @@
-package com.kk.message;
+package com.zhaimi.message;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
-import com.kk.message.sender.MessageSender;
+import com.zhaimi.message.sender.MessageSender;
 
 import junit.textui.TestRunner;
 

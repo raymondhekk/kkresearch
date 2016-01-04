@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message;
+package com.zhaimi.message;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message;
+package com.zhaimi.message;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

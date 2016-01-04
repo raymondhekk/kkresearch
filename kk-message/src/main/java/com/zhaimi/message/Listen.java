@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message;
+package com.zhaimi.message;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.kk.message;
+package com.zhaimi.message;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kk.message.sender.KafkaSender;
+import com.zhaimi.message.sender.KafkaSender;
 
 /**
  * @author kk

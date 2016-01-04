@@ -1,4 +1,4 @@
-package com.kk.message.client;
+package com.zhaimi.message.client;
 
 import java.util.Map;
 import java.util.Properties;
@@ -8,12 +8,12 @@ import java.util.concurrent.Executors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kk.message.DefaultMessageCenter;
-import com.kk.message.ListenerRegistry;
-import com.kk.message.MessageCenter;
-import com.kk.message.MessageDispatcher;
-import com.kk.message.MessageListener;
-import com.kk.message.NamedThreadFactory;
+import com.zhaimi.message.DefaultMessageCenter;
+import com.zhaimi.message.ListenerRegistry;
+import com.zhaimi.message.MessageCenter;
+import com.zhaimi.message.MessageDispatcher;
+import com.zhaimi.message.MessageListener;
+import com.zhaimi.message.NamedThreadFactory;
 
 /**
  * 

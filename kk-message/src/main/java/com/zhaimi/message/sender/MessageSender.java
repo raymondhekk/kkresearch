@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message.sender;
+package com.zhaimi.message.sender;
 
 /**
  * @author kk

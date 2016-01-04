@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.message.sender;
+package com.zhaimi.message.sender;
 
 import java.util.Date;
 import java.util.Properties;
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 
 import com.alibaba.fastjson.JSON;
-import com.kk.message.MsgBean;
+import com.zhaimi.message.MsgBean;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;

@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.kk.message.client;
+package com.zhaimi.message.client;
 
 import java.util.Properties;
 
-import com.kk.message.ListenerRegistry;
-import com.kk.message.MessageCenter;
+import com.zhaimi.message.ListenerRegistry;
+import com.zhaimi.message.MessageCenter;
 
 /**
  * @author kk

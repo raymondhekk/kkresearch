@@ -1,4 +1,4 @@
-package com.kk.message;
+package com.zhaimi.message;
 
 public interface MessageCenter {
 

@@ -1,13 +1,15 @@
 /**
  * 
  */
-package com.kk.message;
+package com.zhaimi.message;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.kk.message.sender.KafkaSender;
+import com.zhaimi.message.Listen;
+import com.zhaimi.message.MessageListener;
+import com.zhaimi.message.sender.KafkaSender;
 
 /**
  * @author kk
