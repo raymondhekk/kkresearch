@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.util.ReflectionUtils;
 
-import com.zhaimi.message.client.ConsumerLauncher;
+import com.zhaimi.message.client.KafkaConsumerLauncher;
 /**
  * MessageListenerBeanPostProcessor
  * @author kk
@@ -26,7 +26,7 @@ public class MessageListenerBeanPostProcessor implements BeanPostProcessor {
 	private static final Logger log = LoggerFactory.getLogger(MessageListenerBeanPostProcessor.class);
 	
 	@Autowired
-	private ConsumerLauncher consumerLauncher;
+	private KafkaConsumerLauncher consumerLauncher;
 	
 	
 	@Override

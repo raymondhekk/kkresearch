@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
-import com.zhaimi.message.client.ConsumerLauncher;
+import com.zhaimi.message.client.KafkaConsumerLauncher;
 import com.zhaimi.message.client.MessageReceiver;
 
 import junit.textui.TestRunner;
@@ -12,9 +12,9 @@ import junit.textui.TestRunner;
 
 public class KafkaReceiverTest extends AbstractDependencyInjectionSpringContextTests {
 	
-	private ConsumerLauncher consumerLauncher;
+	private KafkaConsumerLauncher consumerLauncher;
 	
-	public void setConsumerLauncher(ConsumerLauncher consumerLauncher) {
+	public void setConsumerLauncher(KafkaConsumerLauncher consumerLauncher) {
 		this.consumerLauncher = consumerLauncher;
 	}
 	

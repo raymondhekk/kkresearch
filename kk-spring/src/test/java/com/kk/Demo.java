@@ -8,6 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.kk.trading.service.Order;
 import com.kk.trading.service.OrderService;
+import com.zhaimi.customer.member.service.MemberService.MemberService;
 
 /**
  * @author kk
@@ -28,13 +29,16 @@ public class Demo {
 		Order order = new Order();
 		order.setOrderId("002");
 		order.setOrderName("鲜花订单002");
-		orderService.createOrder(order);
+		orderService.createOrder("A001",order);
 		
 		orderService.afterNewOrder(order);
 		
 		String newOrder = orderService.getOrder("099");
 		System.out.println("****** createOrder " + newOrder);
 		
+		
+//		MemberService memberService= (MemberService) context.getBean("memberService");
+//		System.out.println("****** memberService " + memberService);
 		
 		
 	}

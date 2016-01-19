@@ -34867,3 +34867,1578 @@ Connected to 192.168.20.140:9092 for producing
 [INFO] [pool-2-MessageDispatcherThread-2] 2015-12-31 18:02:25.844 [com.kk.message.DemoListener2.onMessage(DemoListener2.java:34)]
 收到消息内容:orderId_9_1451556145840
 
+[INFO] [main] 2016-01-04 17:36:18.582 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] [main] 2016-01-04 17:36:58.616 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] [main] 2016-01-04 17:38:11.322 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] [main] 2016-01-04 17:38:12.130 [com.zhaimi.message.client.ConsumerLauncher.start(ConsumerLauncher.java:100)]
+ListenerRegistry listeners:{}
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.295 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.424 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.424 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to customer_group1
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.425 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.426 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.426 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.771 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:38:13.812 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.841 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.842 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.175
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.842 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.843 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.843 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.843 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.1.41/fastjson-1.1.41.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.845 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.846 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.846 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.846 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.847 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.847 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.847 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.847 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.848 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:13.849 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@1a2cf268
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:38:13.925 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:38:14.147 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:38:14.165 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151f6e0f13b0016, negotiated timeout = 40000
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 17:38:14.167 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.215 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], starting auto committer every 1000 ms
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.323 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], begin registering consumer customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de in ZK
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.480 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], end registering consumer customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de in ZK
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de_watcher_executor] 2016-01-04 17:38:14.498 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], starting watcher executor thread for consumer customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.565 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de try #0
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.909 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900294200] Stopping leader finder thread
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.910 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900294200] Stopping all fetchers
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.916 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900294200] All connections stopped
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.923 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Cleared all relevant queues for this fetcher
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.924 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.927 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Committing all offsets after clearing the fetcher queues
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:14.938 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Releasing partition ownership
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:15.081 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Consumer customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de selected partitions : 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de-leader-finder-thread] 2016-01-04 17:38:15.089 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de-leader-finder-thread], Starting 
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:15.093 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de try #0
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:15.101 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Creating topic event watcher for topics 
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:38:15.112 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900293763-e07a82de], Topics to consume = List()
+
+[INFO] [main] 2016-01-04 17:38:25.450 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:producer-context.xml
+
+[INFO] [main] 2016-01-04 17:38:26.317 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [main] 2016-01-04 17:38:26.364 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property message.send.max.retries is overridden to 5
+
+[INFO] [main] 2016-01-04 17:38:26.364 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:38:26.365 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.required.acks is overridden to 1
+
+[INFO] [main] 2016-01-04 17:38:26.365 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property serializer.class is overridden to kafka.serializer.StringEncoder
+
+[INFO] [main] 2016-01-04 17:38:26.366 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property topic.metadata.refresh.interval.ms is overridden to 3600000
+
+[INFO] [main] 2016-01-04 17:38:27.526 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:127.0.0.1,port:9092 with correlation id 0 for 1 topic(s) Set(topic123)
+
+[INFO] [main] 2016-01-04 17:38:27.639 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to 127.0.0.1:9092 for producing
+
+[INFO] [main] 2016-01-04 17:38:27.721 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:38:28.064 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [main] 2016-01-04 17:38:28.112 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:127.0.0.1,port:9092 with correlation id 21 for 1 topic(s) Set(topic789)
+
+[INFO] [main] 2016-01-04 17:38:28.113 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to 127.0.0.1:9092 for producing
+
+[INFO] [main] 2016-01-04 17:38:28.115 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:38:28.115 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [main] 2016-01-04 17:38:28.117 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [main] 2016-01-04 17:41:35.807 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] [main] 2016-01-04 17:41:36.682 [com.zhaimi.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:45)]
+ MessageListener found:com.zhaimi.message.DemoListener1@75f9eccc
+
+[INFO] [main] 2016-01-04 17:41:36.687 [com.zhaimi.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:64)]
+Register listener 'com.zhaimi.message.DemoListener1@75f9eccc' on topic 'topic123'
+
+[INFO] [main] 2016-01-04 17:41:36.693 [com.zhaimi.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:45)]
+ MessageListener found:com.zhaimi.message.DemoListener2@3bbc39f8
+
+[INFO] [main] 2016-01-04 17:41:36.693 [com.zhaimi.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:64)]
+Register listener 'com.zhaimi.message.DemoListener2@3bbc39f8' on topic 'topic789'
+
+[INFO] [main] 2016-01-04 17:41:36.732 [com.zhaimi.message.client.ConsumerLauncher.start(ConsumerLauncher.java:100)]
+ListenerRegistry listeners:{topic123=com.zhaimi.message.DemoListener1@75f9eccc, topic789=com.zhaimi.message.DemoListener2@3bbc39f8}
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.012 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.049 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property auto.commit.interval.ms is overridden to 1000
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.050 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property group.id is overridden to customer_group1
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.050 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.connect is overridden to 127.0.0.1:2181
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.051 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.session.timeout.ms is overridden to 40000
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.051 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property zookeeper.sync.time.ms is overridden to 200
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.131 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Connecting to zookeeper instance at 127.0.0.1:2181
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:41:37.145 [org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)]
+Starting ZkClient event thread.
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.159 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.160 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:host.name=192.168.21.175
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.163 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.version=1.8.0_40
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.163 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.vendor=Oracle Corporation
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.164 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.164 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.class.path=/Users/kk/workspace2/kkresearch/kk-message/target/test-classes:/Users/kk/workspace2/kkresearch/kk-message/target/classes:/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes:/Users/kk/workspace2/kkresearch/kk-spring/target/classes:/Users/kk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kk/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/kk/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/kk/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/kk/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/Users/kk/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar:/Users/kk/.m2/repository/org/springframework/spring-core/4.1.2.RELEASE/spring-core-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aop/4.1.2.RELEASE/spring-aop-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-beans/4.1.2.RELEASE/spring-beans-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-aspects/4.1.2.RELEASE/spring-aspects-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/aspectj/aspectjweaver/1.8.3/aspectjweaver-1.8.3.jar:/Users/kk/.m2/repository/org/springframework/spring-context-support/4.1.2.RELEASE/spring-context-support-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-context/4.1.2.RELEASE/spring-context-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-expression/4.1.2.RELEASE/spring-expression-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/kk/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/kk/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/kk/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kk/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/Users/kk/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/kk/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar:/Users/kk/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/kk/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/kk/.m2/repository/com/alibaba/fastjson/1.1.41/fastjson-1.1.41.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka_2.10/0.8.2.2/kafka_2.10-0.8.2.2.jar:/Users/kk/.m2/repository/org/apache/kafka/kafka-clients/0.8.2.2/kafka-clients-0.8.2.2.jar:/Users/kk/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/kk/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/kk/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar:/Users/kk/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/kk/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/kk/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/kk/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/kk/.m2/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Users/kk/.m2/repository/org/springframework/spring-tx/4.1.2.RELEASE/spring-tx-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-jdbc/4.1.2.RELEASE/spring-jdbc-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-test/4.1.2.RELEASE/spring-test-4.1.2.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-kafka/1.3.0.RELEASE/spring-integration-kafka-1.3.0.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/integration/spring-integration-core/4.1.6.RELEASE/spring-integration-core-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/projectreactor/reactor-core/1.1.4.RELEASE/reactor-core-1.1.4.RELEASE.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections/5.0.0/gs-collections-5.0.0.jar:/Users/kk/.m2/repository/com/goldmansachs/gs-collections-api/5.0.0/gs-collections-api-5.0.0.jar:/Users/kk/.m2/repository/com/lmax/disruptor/3.2.1/disruptor-3.2.1.jar:/Users/kk/.m2/repository/io/gatling/jsr166e/1.0/jsr166e-1.0.jar:/Users/kk/.m2/repository/org/springframework/spring-messaging/4.1.6.RELEASE/spring-messaging-4.1.6.RELEASE.jar:/Users/kk/.m2/repository/org/springframework/retry/spring-retry/1.1.1.RELEASE/spring-retry-1.1.1.RELEASE.jar:/Users/kk/.m2/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Users/kk/.m2/repository/io/projectreactor/reactor-core/2.0.6.RELEASE/reactor-core-2.0.6.RELEASE.jar:/Users/kk/.m2/repository/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.164 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.library.path=/Users/kk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.165 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.io.tmpdir=/var/folders/xh/q11qy_mj5035zm7k574xjzxr0000gn/T/
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.165 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:java.compiler=<NA>
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.165 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.name=Mac OS X
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.166 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.arch=x86_64
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.166 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:os.version=10.10.5
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.166 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.name=kk
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.167 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.home=/Users/kk
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.167 [org.apache.zookeeper.Environment.logEnv(Environment.java:100)]
+Client environment:user.dir=/Users/kk/workspace2/kkresearch/kk-message
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.168 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@7beafefe
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:41:37.192 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:41:37.331 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:41:37.350 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151f6e0f13b0017, negotiated timeout = 40000
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 17:41:37.352 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.366 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], starting auto committer every 1000 ms
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.450 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin registering consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 in ZK
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.497 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end registering consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 in ZK
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:41:37.503 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], starting watcher executor thread for consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.547 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.777 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.778 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.779 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.780 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.782 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.782 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.784 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.900 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.913 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.916 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.917 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.968 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:37.972 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:38.022 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 225: consumed offset = 225,topic123:0: fetched offset = 791: consumed offset = 791
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.025 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:38.041 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:38.053 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Creating topic event watcher for topics topic123|topic789
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.054 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.055 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.056 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.056 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [pool-1-MessageReceiverThread-1] 2016-01-04 17:41:38.077 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Topics to consume = List(topic789, topic123)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.086 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 0 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.091 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.113 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:41:38.164 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:41:38.171 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 791 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 225 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.645 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message0_1451900306489
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.646 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message1_1451900308086
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.646 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message2_1451900308091
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.647 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message3_1451900308093
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.647 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message4_1451900308094
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.648 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message5_1451900308099
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.648 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message6_1451900308101
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.648 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message7_1451900308103
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.649 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message8_1451900308105
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.649 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message9_1451900308108
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.650 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_0_1451900308110
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.650 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_1_1451900308123
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.651 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_2_1451900308127
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.651 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_3_1451900308130
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.652 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_4_1451900308132
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.654 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_5_1451900308135
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.654 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_6_1451900308137
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.655 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_7_1451900308139
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:38.656 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_8_1451900308142
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:38.656 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_9_1451900308144
+
+[INFO] [main] 2016-01-04 17:41:49.440 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:producer-context.xml
+
+[INFO] [main] 2016-01-04 17:41:50.345 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [main] 2016-01-04 17:41:50.374 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property message.send.max.retries is overridden to 5
+
+[INFO] [main] 2016-01-04 17:41:50.374 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:41:50.375 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.required.acks is overridden to 1
+
+[INFO] [main] 2016-01-04 17:41:50.375 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property serializer.class is overridden to kafka.serializer.StringEncoder
+
+[INFO] [main] 2016-01-04 17:41:50.375 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property topic.metadata.refresh.interval.ms is overridden to 3600000
+
+[INFO] [main] 2016-01-04 17:41:50.913 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:127.0.0.1,port:9092 with correlation id 0 for 1 topic(s) Set(topic123)
+
+[INFO] [main] 2016-01-04 17:41:51.064 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to 127.0.0.1:9092 for producing
+
+[INFO] [main] 2016-01-04 17:41:51.094 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:41:51.368 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.374 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message0_1451900510463
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.385 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message1_1451900511382
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.388 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message2_1451900511384
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.391 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message3_1451900511388
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.397 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message4_1451900511391
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.401 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message5_1451900511397
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.404 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message6_1451900511401
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.407 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message7_1451900511404
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.411 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message8_1451900511408
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.414 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message9_1451900511410
+
+[INFO] [main] 2016-01-04 17:41:51.417 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:127.0.0.1,port:9092 with correlation id 21 for 1 topic(s) Set(topic789)
+
+[INFO] [main] 2016-01-04 17:41:51.418 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to 127.0.0.1:9092 for producing
+
+[INFO] [main] 2016-01-04 17:41:51.419 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:41:51.420 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [main] 2016-01-04 17:41:51.422 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.428 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_0_1451900511413
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.432 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_1_1451900511428
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.436 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_2_1451900511432
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.439 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_3_1451900511436
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.444 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_4_1451900511440
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.447 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_5_1451900511444
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.450 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_6_1451900511447
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.453 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_7_1451900511450
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:41:51.458 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_8_1451900511454
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:41:51.462 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_9_1451900511459
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.015 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.038 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.039 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.040 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.040 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.040 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.040 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:42:03.044 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:42:03.045 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.045 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.045 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.045 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.045 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.046 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.046 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.103 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.104 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.105 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.105 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.144 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.177 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.181 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 245: consumed offset = 245,topic123:0: fetched offset = 811: consumed offset = 811
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.189 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.196 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.197 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.197 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.198 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.198 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 1 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.199 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.201 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:42:03.204 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:42:03.205 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 811 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 245 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:42:03.205 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [main] 2016-01-04 17:42:24.104 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:producer-context.xml
+
+[INFO] [main] 2016-01-04 17:42:25.070 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [main] 2016-01-04 17:42:25.138 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property message.send.max.retries is overridden to 5
+
+[INFO] [main] 2016-01-04 17:42:25.139 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:42:25.140 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.required.acks is overridden to 1
+
+[INFO] [main] 2016-01-04 17:42:25.141 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property serializer.class is overridden to kafka.serializer.StringEncoder
+
+[INFO] [main] 2016-01-04 17:42:25.142 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property topic.metadata.refresh.interval.ms is overridden to 3600000
+
+[INFO] [main] 2016-01-04 17:42:25.711 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:127.0.0.1,port:9092 with correlation id 0 for 1 topic(s) Set(topic123)
+
+[INFO] [main] 2016-01-04 17:42:25.825 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to 127.0.0.1:9092 for producing
+
+[INFO] [main] 2016-01-04 17:42:25.850 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:42:25.904 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.909 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message0_1451900545283
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:25.922 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message1_1451900545918
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.930 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message2_1451900545924
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:25.940 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message3_1451900545928
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.950 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message4_1451900545932
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.950 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message5_1451900545936
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.958 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message6_1451900545938
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:25.960 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message7_1451900545943
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.960 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message8_1451900545949
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:25.962 [com.zhaimi.message.DemoListener1.onMessage(DemoListener1.java:35)]
+收到消息内容:message9_1451900545954
+
+[INFO] [main] 2016-01-04 17:42:25.972 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:127.0.0.1,port:9092 with correlation id 21 for 1 topic(s) Set(topic789)
+
+[INFO] [main] 2016-01-04 17:42:25.974 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to 127.0.0.1:9092 for producing
+
+[INFO] [main] 2016-01-04 17:42:25.976 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from 127.0.0.1:9092
+
+[INFO] [main] 2016-01-04 17:42:25.977 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [main] 2016-01-04 17:42:25.980 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.985 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_0_1451900545965
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:25.990 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_1_1451900545987
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:25.994 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_2_1451900545990
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:25.997 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_3_1451900545995
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:26.004 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_4_1451900546001
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:26.008 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_5_1451900546005
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:26.012 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_6_1451900546009
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:26.016 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_7_1451900546012
+
+[INFO] [pool-2-MessageDispatcherThread-2] 2016-01-04 17:42:26.020 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_8_1451900546017
+
+[INFO] [pool-2-MessageDispatcherThread-1] 2016-01-04 17:42:26.023 [com.zhaimi.message.DemoListener2.onMessage(DemoListener2.java:36)]
+收到消息内容:orderId_9_1451900546020
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:58:34.920 [org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1096)]
+Client session timed out, have not heard from server in 568490ms for sessionid 0x151f6e0f13b0017, closing socket connection and attempting reconnect
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 17:58:35.023 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (Disconnected)
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:58:36.748 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:58:36.749 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:58:36.753 [org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1094)]
+Unable to reconnect to ZooKeeper service, session 0x151f6e0f13b0017 has expired, closing socket connection
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 17:58:36.753 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (Expired)
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 17:58:36.754 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@7beafefe
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 17:58:36.755 [org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:512)]
+EventThread shut down
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:58:36.756 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.756 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], ZK expired; release old broker parition ownership; re-register consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.757 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin registering consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 in ZK
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:58:36.757 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 17:58:36.760 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151f6e0f13b0018, negotiated timeout = 40000
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 17:58:36.762 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.765 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end registering consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 in ZK
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.766 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.790 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.790 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:36.791 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.791 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.791 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:36.791 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:36.792 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.304 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.304 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.306 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.306 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.306 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.307 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.307 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.320 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.321 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.321 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.321 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.325 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.329 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.331 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 255: consumed offset = 255,topic123:0: fetched offset = 821: consumed offset = 821
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.332 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.332 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.333 [kafka.utils.Logging$class.info(Logging.scala:68)]
+ZK expired: resubscribing topic event listener to topic registry
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.335 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.336 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Topics to consume = List(topic789, topic123)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.337 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.337 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.338 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.338 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.339 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 2 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.339 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.340 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Topic info for path /brokers/topics/topic789 changed to {"version":1,"partitions":{"0":[0]}}, triggering rebalance
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.341 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 17:58:37.343 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Topic info for path /brokers/topics/topic123 changed to {"version":1,"partitions":{"0":[0]}}, triggering rebalance
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.344 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.344 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.347 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.347 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.348 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.348 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.348 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.348 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.349 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.349 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.349 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.350 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.350 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.351 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.351 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.351 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.377 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.377 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.378 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.378 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.385 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.388 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.391 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 255: consumed offset = 255,topic123:0: fetched offset = 821: consumed offset = 821
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.391 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.392 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.392 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.400 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.401 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.401 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.402 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.402 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 3 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.404 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.408 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.411 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.413 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.417 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.418 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.424 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.431 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.432 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.432 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.435 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.438 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.439 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.448 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.448 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.449 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.449 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.453 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.485 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.485 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.486 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.486 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.491 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.495 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.497 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 255: consumed offset = 255,topic123:0: fetched offset = 821: consumed offset = 821
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 17:58:37.498 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.499 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.503 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.504 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.504 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.505 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.505 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 4 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.506 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.507 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 17:58:37.510 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 17:58:37.510 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 19:16:18.522 [org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1096)]
+Client session timed out, have not heard from server in 393748ms for sessionid 0x151f6e0f13b0018, closing socket connection and attempting reconnect
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 19:16:18.624 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (Disconnected)
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 19:16:20.245 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 19:16:20.246 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 19:16:20.247 [org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1094)]
+Unable to reconnect to ZooKeeper service, session 0x151f6e0f13b0018 has expired, closing socket connection
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 19:16:20.247 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (Expired)
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 19:16:20.248 [org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)]
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@7beafefe
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 19:16:20.248 [org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:512)]
+EventThread shut down
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 19:16:20.249 [org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)]
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.248 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], ZK expired; release old broker parition ownership; re-register consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.249 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin registering consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 in ZK
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 19:16:20.250 [org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)]
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+[INFO] [pool-1-MessageReceiverThread-1-SendThread(127.0.0.1:2181)] 2016-01-04 19:16:20.253 [org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)]
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x151f6e0f13b001a, negotiated timeout = 40000
+
+[INFO] [pool-1-MessageReceiverThread-1-EventThread] 2016-01-04 19:16:20.254 [org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)]
+zookeeper state changed (SyncConnected)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.256 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end registering consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 in ZK
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.257 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.267 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.268 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.268 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.268 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.268 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.269 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.269 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.271 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.271 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.272 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.272 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.272 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.272 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.272 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.282 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.283 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.283 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.284 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.288 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.292 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.293 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 255: consumed offset = 255,topic123:0: fetched offset = 821: consumed offset = 821
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.293 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.294 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.294 [kafka.utils.Logging$class.info(Logging.scala:68)]
+ZK expired: resubscribing topic event listener to topic registry
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.296 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.298 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.298 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.299 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.299 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.299 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 5 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.301 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.304 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Topics to consume = List(topic789, topic123)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.305 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.310 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.312 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.316 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Topic info for path /brokers/topics/topic789 changed to {"version":1,"partitions":{"0":[0]}}, triggering rebalance
+
+[INFO] [ZkClient-EventThread-18-127.0.0.1:2181] 2016-01-04 19:16:20.319 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Topic info for path /brokers/topics/topic123 changed to {"version":1,"partitions":{"0":[0]}}, triggering rebalance
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.319 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.320 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.321 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.321 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.321 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.321 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.323 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.324 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.324 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.324 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.325 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.325 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.325 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.325 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.352 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.353 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.353 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.354 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.358 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.364 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.366 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 255: consumed offset = 255,topic123:0: fetched offset = 821: consumed offset = 821
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.367 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.367 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.367 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.370 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.371 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.371 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.371 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.372 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 6 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.372 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.374 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.376 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.378 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.382 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.382 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.385 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.385 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.386 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.386 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.387 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.387 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.387 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.388 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.388 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.388 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.388 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.388 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.406 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.407 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.407 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.407 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.412 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.415 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.417 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 255: consumed offset = 255,topic123:0: fetched offset = 821: consumed offset = 821
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:16:20.417 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.418 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.421 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.421 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.422 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.422 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.422 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 7 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.423 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.424 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:16:20.426 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:16:20.426 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:45.978 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], begin rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:45.987 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping leader finder thread
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:45.988 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutting down
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:45.988 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:45.990 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:45.990 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Stopping all fetchers
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:45.991 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutting down
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:21:45.993 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:21:46.193 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Stopped 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.193 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Shutdown completed
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.194 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] All connections stopped
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.194 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared all relevant queues for this fetcher
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.194 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Cleared the data chunks in all the consumer message iterators
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.195 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Committing all offsets after clearing the fetcher queues
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.195 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Releasing partition ownership
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.223 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic789 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0, customer_group1_kkdeMacBook-Air.local-1451906505617-801e2350-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.223 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.224 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 rebalancing the following partitions: ArrayBuffer(0) for topic topic123 with consumers: List(customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0, customer_group1_kkdeMacBook-Air.local-1451906505617-801e2350-0)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.225 [kafka.utils.Logging$class.info(Logging.scala:68)]
+customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 attempting to claim partition 0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.230 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic123
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.233 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0 successfully owned partition 0 for topic topic789
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.235 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], Consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 selected partitions : topic789:0: fetched offset = 255: consumed offset = 255,topic123:0: fetched offset = 821: consumed offset = 821
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9_watcher_executor] 2016-01-04 19:21:46.235 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9], end rebalancing consumer customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9 try #0
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.236 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.239 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Verifying properties
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.239 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property client.id is overridden to customer_group1
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.239 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property metadata.broker.list is overridden to kkdemacbook-air.local:9092
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.240 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Property request.timeout.ms is overridden to 30000
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.240 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Fetching metadata from broker id:0,host:kkdemacbook-air.local,port:9092 with correlation id 8 for 2 topic(s) Set(topic123, topic789)
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.240 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Connected to kkdemacbook-air.local:9092 for producing
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.242 [kafka.utils.Logging$class.info(Logging.scala:68)]
+Disconnecting from kkdemacbook-air.local:9092
+
+[INFO] [ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0] 2016-01-04 19:21:46.244 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherThread-customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-0-0], Starting 
+
+[INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.244 [kafka.utils.Logging$class.info(Logging.scala:68)]
+[ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
+

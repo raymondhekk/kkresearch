@@ -635,3 +635,220 @@ Loading XML bean definitions from class path resource [applicationContext.xml]
 [INFO] 2015-12-30 11:44:12.435 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:79)]
 Register listener com.kk.trading.service.OrderListener@3ec300f1 on topic topic123
 
+[INFO] 2016-01-08 20:03:15.484 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Fri Jan 08 20:03:15 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-08 20:03:15.642 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[WARN] 2016-01-08 20:03:16.819 main [org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)]
+Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kk.message.MessageListenerBeanPostProcessor] for bean with name 'messageListenerBeanPostProcessor' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.kk.message.MessageListenerBeanPostProcessor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:623)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1394)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.kk.Demo.main(Demo.java:24)
+Caused by: java.lang.ClassNotFoundException: com.kk.message.MessageListenerBeanPostProcessor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1317)
+	... 10 more
+[INFO] 2016-01-08 20:23:08.815 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Fri Jan 08 20:23:08 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-08 20:23:08.864 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-08 20:23:47.467 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Fri Jan 08 20:23:47 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-08 20:23:47.526 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-08 20:25:53.286 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Fri Jan 08 20:25:53 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-08 20:25:53.344 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:14:08.385 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:14:08 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:14:08.444 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:16:12.720 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:16:12 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:16:12.783 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:17:31.282 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:17:31 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:17:31.331 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:18:24.664 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@490ab905: startup date [Tue Jan 19 19:18:24 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:18:24.750 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:29:16.033 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:29:16 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:29:16.094 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:31:15.664 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:31:15 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:31:15.720 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[WARN] 2016-01-19 19:31:16.488 main [org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)]
+Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService' defined in file [/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes/com/zhaimi/customer/member/service/MemberService/MemberService.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.kk.OrderServiceImpl [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:548)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.kk.Demo.main(Demo.java:25)
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.kk.OrderServiceImpl [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:192)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:208)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:262)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:294)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:330)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	... 11 more
+[INFO] 2016-01-19 19:32:45.471 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:32:45 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:32:45.527 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[WARN] 2016-01-19 19:32:46.424 main [org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)]
+Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService' defined in file [/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes/com/zhaimi/customer/member/service/MemberService/MemberService.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.kk.OrderServiceImpl [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:548)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.kk.Demo.main(Demo.java:25)
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.kk.OrderServiceImpl [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:192)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:208)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:262)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:294)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:330)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	... 11 more
+[INFO] 2016-01-19 19:33:50.269 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:33:50 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:33:50.319 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:34:01.305 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:34:01 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:34:01.379 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:34:36.429 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:34:36 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:34:36.537 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:35:15.968 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:35:15 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:35:16.029 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:36:16.554 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:36:16 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:36:16.601 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:37:04.881 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:37:04 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:37:04.943 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:37:38.736 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:37:38 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:37:38.823 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:38:15.754 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:38:15 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:38:15.819 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:40:17.595 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:40:17 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:40:17.649 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:41:20.581 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:41:20 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:41:20.633 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+

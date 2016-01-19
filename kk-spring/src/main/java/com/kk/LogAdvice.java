@@ -23,7 +23,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class LogAdvice {
 	
-	@Pointcut("execution(* com.kk.OrderServiceImpl.*(..))")
+	@Pointcut("execution(* com.kk.trading.service.impl.OrderServiceImpl.*(..))")
 	public void poincut() { }
 	
 	@Before("poincut()")

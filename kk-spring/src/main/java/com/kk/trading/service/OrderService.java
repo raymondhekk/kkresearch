@@ -13,6 +13,6 @@ public interface OrderService {
 
 	String afterNewOrder(Order order);
 
-	String createOrder(Order order);
+	String createOrder(String memberId,Order order);
 
 }
