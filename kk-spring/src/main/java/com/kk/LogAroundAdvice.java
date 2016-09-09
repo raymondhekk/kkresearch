@@ -15,14 +15,14 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class LogAroundAdvice {
 	
-	@Pointcut("execution(* com.kk.trading.service.OrderServiceImpl.*(..))")
+//	@Pointcut("execution(* com.kk.trading.mapper.OrderServiceImpl.*(..))")
 	public void poincut() { }
 	/**
 	 * Around
 	 * @param pjp
 	 * @throws Throwable
 	 */
-	@Around("poincut()")
+//	@Around("poincut()")
 	public Object around(ProceedingJoinPoint pjp) throws Throwable {
 		String name =" name=" + pjp.getSignature().getName();
 		System.out.println("starting around.... " +  name);

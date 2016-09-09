@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.kk.trading.service;
+package com.kk.trading.mapper;
 
 /**
  * @author kk

@@ -20,10 +20,10 @@ import org.aspectj.lang.annotation.Pointcut;
  * @author kk
  *
  */
-@Aspect
+//@Aspect
 public class LogAdvice {
 	
-	@Pointcut("execution(* com.kk.trading.service.impl.OrderServiceImpl.*(..))")
+	@Pointcut("execution(* com.kk.trading.mapper.impl.OrderMapperImpl.*(..))")
 	public void poincut() { }
 	
 	@Before("poincut()")

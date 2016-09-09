@@ -36442,3 +36442,12 @@ Disconnecting from kkdemacbook-air.local:9092
 [INFO] [customer_group1_kkdeMacBook-Air.local-1451900497129-a94efde9-leader-finder-thread] 2016-01-04 19:21:46.244 [kafka.utils.Logging$class.info(Logging.scala:68)]
 [ConsumerFetcherManager-1451900497359] Added fetcher for partitions ArrayBuffer([[topic123,0], initOffset 821 to broker id:0,host:kkdemacbook-air.local,port:9092] , [[topic789,0], initOffset 255 to broker id:0,host:kkdemacbook-air.local,port:9092] )
 
+[INFO] [main] 2016-08-22 19:30:10.521 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] [main] 2016-08-22 19:30:39.874 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+
+[INFO] [main] 2016-08-22 19:32:29.401 [org.springframework.test.AbstractSingleSpringContextTests.loadContextLocations(AbstractSingleSpringContextTests.java:177)]
+Loading context for locations: classpath:consumer-context.xml
+

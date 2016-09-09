@@ -34,15 +34,20 @@
     
 <!--     <bean id="logAroundAdvice2" class="com.kk.LogAroundAdvice2" />   -->
 <!--     <bean id="logAroundAdvice3" class="com.kk.LogAroundAdvice3" />   -->
-    <bean id="sendMsgAdvice" class="com.kk.SendMsgAdvice" />
+    <bean id="beforeSendMessageAdvice" class="com.kk.AbstractSendMessageAdvice" />
      
     <!-- 定义Common -->  
-    <bean id="orderService" class="com.kk.trading.service.impl.OrderServiceImpl" />  
+    <bean id="orderService" class="com.kk.trading.mapper.impl.OrderMapperImpl" />  
     
 	<aop:config>
-		<aop:pointcut id="log" expression="execution(* com.kk..service.*ServiceImpl.*(..))"/> 
-		<aop:pointcut id="beforeSendMsg" expression="@annotation(com.kk.BeforeSendMsg)"/> 
-		<aop:pointcut id="afterSendMsg" expression="@annotation(com.kk.AfterSendMsg)"/> 
+<!-- 		<aop:pointcut id="log" expression="execution(* com.kk..service.*ServiceImpl.*(..))"/>  -->
+		<aop:pointcut id="beforeSendMsgPointCut" expression="@annotation(com.kk.SendMessageBefore)"/> 
+		<aop:pointcut id="afterSendMsgPointCut" expression="@annotation(com.kk.SendMessageAfter)"/> 
+		
+		<aop:pointcut id="insertBeforeSendMsgPointCut" expression="execution(* com.kk..mapper.impl.*MapperImpl.insert*(..))"/>
+		<aop:pointcut id="updateBeforeSendMsgPointCut" expression="execution(* com.kk..mapper.impl.*MapperImpl.update*(..))"/>
+		<aop:pointcut id="deleteBeforeSendMsgPointCut" expression="execution(* com.kk..mapper.impl.*MapperImpl.delete*(..))"/>
+		
 		
 <!-- 		<aop:aspect id="logging2" ref="logAroundAdvice2"> -->
 <!-- 			<aop:around pointcut-ref="log" method="around" /> -->
@@ -52,13 +57,28 @@
 <!-- 			<aop:around pointcut-ref="log" method="around" /> -->
 <!-- 		</aop:aspect> -->
 		
-		<aop:aspect id="beforeSendMsgAdviceAspect" ref="sendMsgAdvice">
-			<aop:around pointcut-ref="beforeSendMsg" method="around" />
+		<aop:aspect id="beforeSendMsgPointCutAdviceAspect" ref="beforeSendMessageAdvice">
+			<aop:around pointcut-ref="beforeSendMsgPointCut" method="around" />
 		</aop:aspect>
 		
-		<aop:aspect id="afterSendMsgAdviceAspect" ref="sendMsgAdvice">
-			<aop:around pointcut-ref="afterSendMsg" method="around" />
+		<aop:aspect id="afterSendMsgPointCutAdviceAspect" ref="beforeSendMessageAdvice">
+			<aop:around pointcut-ref="afterSendMsgPointCut" method="around" />
 		</aop:aspect>
+		
+		<aop:aspect id="UpdateBeforeSendMsgAspect" ref="beforeSendMessageAdvice">
+			<aop:around pointcut-ref="updateBeforeSendMsgPointCut" method="around" />
+		</aop:aspect>
+		
+		
+		<aop:aspect id="InsertBeforeSendMsgAspect" ref="beforeSendMessageAdvice">
+			<aop:around pointcut-ref="insertBeforeSendMsgPointCut" method="around" />
+		</aop:aspect>
+		
+		
+		<aop:aspect id="DeleteBeforeSendMsgAspect" ref="beforeSendMessageAdvice">
+			<aop:around pointcut-ref="deleteBeforeSendMsgPointCut" method="around" />
+		</aop:aspect>
+		
 	 </aop:config>
 	 
 

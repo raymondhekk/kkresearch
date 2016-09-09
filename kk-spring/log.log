@@ -79,7 +79,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at com.kk.Demo.main(Demo.java:24)
+	at com.kk.SendMsgAopDemo.main(Demo.java:24)
 Caused by: java.lang.NullPointerException
 	at com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:40)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
@@ -147,7 +147,7 @@ Bean '(inner bean)#50b472aa' of type [class org.springframework.aop.aspectj.Aspe
 Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
 [WARN] 2015-12-25 16:42:41.179 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:46)]
-@Listen annotation not declared on event method 'onMessage' of bean com.kk.trading.service.OrderServiceImpl@2cd76f31
+@Listen annotation not declared on event method 'onMessage' of bean com.kk.trading.mapper.OrderServiceImpl@2cd76f31
 
 [INFO] 2015-12-25 16:43:21.068 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
 Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2108b5: startup date [Fri Dec 25 16:43:21 CST 2015]; root of context hierarchy
@@ -210,7 +210,7 @@ Bean '(inner bean)#36a5cabc' of type [class org.springframework.aop.aspectj.Aspe
 Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
 [WARN] 2015-12-25 16:54:05.899 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:47)]
-@Listen annotation not declared on event method 'onMessage' of bean com.kk.trading.service.OrderServiceImpl@4879dfad
+@Listen annotation not declared on event method 'onMessage' of bean com.kk.trading.mapper.OrderServiceImpl@4879dfad
 
 [INFO] 2015-12-25 16:58:01.203 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
 Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5f2108b5: startup date [Fri Dec 25 16:58:01 CST 2015]; root of context hierarchy
@@ -287,7 +287,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at com.kk.Demo.main(Demo.java:24)
+	at com.kk.SendMsgAopDemo.main(Demo.java:24)
 Caused by: java.lang.NullPointerException
 	at com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:45)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
@@ -355,7 +355,7 @@ Bean '(inner bean)#50b472aa' of type [class org.springframework.aop.aspectj.Aspe
 Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
 [WARN] 2015-12-25 17:14:38.481 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:51)]
-@Listen annotation not declared on event method 'onMessage' of bean com.kk.trading.service.OrderServiceImpl@2cd76f31
+@Listen annotation not declared on event method 'onMessage' of bean com.kk.trading.mapper.OrderServiceImpl@2cd76f31
 
 [INFO] 2015-12-25 17:21:56.985 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
 Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@442d9b6e: startup date [Fri Dec 25 17:21:56 CST 2015]; root of context hierarchy
@@ -402,7 +402,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at com.kk.Demo.main(Demo.java:24)
+	at com.kk.SendMsgAopDemo.main(Demo.java:24)
 Caused by: java.lang.NullPointerException
 	at com.kk.message.MessageListenerBeanPostProcessor$1.doWith(MessageListenerBeanPostProcessor.java:53)
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:496)
@@ -589,7 +589,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at com.kk.Demo.main(Demo.java:24)
+	at com.kk.SendMsgAopDemo.main(Demo.java:24)
 Caused by: java.lang.NullPointerException
 	at com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:69)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
@@ -621,7 +621,7 @@ Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@44
 Loading XML bean definitions from class path resource [applicationContext.xml]
 
 [INFO] 2015-12-30 11:35:45.995 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:45)]
- MessageListener found:com.kk.trading.service.OrderListener@2ea6137
+ MessageListener found:com.kk.trading.mapper.OrderListener@2ea6137
 
 [INFO] 2015-12-30 11:44:11.434 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
 Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Dec 30 11:44:11 CST 2015]; root of context hierarchy
@@ -630,10 +630,10 @@ Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36
 Loading XML bean definitions from class path resource [applicationContext.xml]
 
 [INFO] 2015-12-30 11:44:12.433 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:47)]
- MessageListener found:com.kk.trading.service.OrderListener@3ec300f1
+ MessageListener found:com.kk.trading.mapper.OrderListener@3ec300f1
 
 [INFO] 2015-12-30 11:44:12.435 main [com.kk.message.MessageListenerBeanPostProcessor.postProcessAfterInitialization(MessageListenerBeanPostProcessor.java:79)]
-Register listener com.kk.trading.service.OrderListener@3ec300f1 on topic topic123
+Register listener com.kk.trading.mapper.OrderListener@3ec300f1 on topic topic123
 
 [INFO] 2016-01-08 20:03:15.484 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
 Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Fri Jan 08 20:03:15 CST 2016]; root of context hierarchy
@@ -655,7 +655,7 @@ org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find clas
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at com.kk.Demo.main(Demo.java:24)
+	at com.kk.SendMsgAopDemo.main(Demo.java:24)
 Caused by: java.lang.ClassNotFoundException: com.kk.message.MessageListenerBeanPostProcessor
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
@@ -735,7 +735,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at com.kk.Demo.main(Demo.java:25)
+	at com.kk.SendMsgAopDemo.main(Demo.java:25)
 Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.kk.OrderServiceImpl [Xlint:invalidAbsoluteTypeName]
 	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
 	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
@@ -774,7 +774,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
 	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
-	at com.kk.Demo.main(Demo.java:25)
+	at com.kk.SendMsgAopDemo.main(Demo.java:25)
 Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.kk.OrderServiceImpl [Xlint:invalidAbsoluteTypeName]
 	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
 	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
@@ -851,4 +851,1489 @@ Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36
 
 [INFO] 2016-01-19 19:41:20.633 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
 Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:55:54.079 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:55:54 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:55:54.139 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-19 19:56:49.355 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Tue Jan 19 19:56:49 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-19 19:56:49.411 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-20 12:36:05.722 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Jan 20 12:36:05 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-20 12:36:05.779 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-20 12:44:50.656 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Jan 20 12:44:50 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-20 12:44:50.711 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-20 12:48:48.429 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Jan 20 12:48:48 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-20 12:48:48.494 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-20 13:39:24.552 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Jan 20 13:39:24 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-20 13:39:24.727 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-20 13:40:02.841 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Jan 20 13:40:02 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-20 13:40:02.897 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-20 13:40:22.337 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Wed Jan 20 13:40:22 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-20 13:40:22.391 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 14:34:52.237 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:34:52 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:34:52.423 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 14:35:41.232 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:35:41 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:35:41.298 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 14:38:29.541 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:38:29 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:38:29.597 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[WARN] 2016-01-21 14:38:30.295 main [org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)]
+Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService' defined in file [/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes/com/zhaimi/customer/member/service/MemberService/MemberService.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut poincut
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:548)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.kk.SendMsgAopDemo.main(SendMsgAopDemo.java:25)
+Caused by: java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut poincut
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:192)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:208)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:262)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:294)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:330)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	... 11 more
+[INFO] 2016-01-21 14:39:16.401 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:39:16 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:39:16.467 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[WARN] 2016-01-21 14:39:17.242 main [org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)]
+Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService' defined in file [/Users/kk/workspace2/kkresearch/kk-spring/target/test-classes/com/zhaimi/customer/member/service/MemberService/MemberService.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut poincut
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:548)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.kk.SendMsgAopDemo.main(SendMsgAopDemo.java:25)
+Caused by: java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut poincut
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:192)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:208)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:262)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:294)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:330)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	... 11 more
+[INFO] 2016-01-21 14:43:06.303 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:43:06 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:43:06.355 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 14:46:30.587 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:46:30 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:46:30.652 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 14:48:04.277 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:48:04 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:48:04.337 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 14:49:10.539 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:49:10 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:49:10.612 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 14:49:11.402 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:34)]
+SendMsgBeforeInvokeAdvice around.... com.kk.trading.mapper.OrderMapper
+
+[DEBUG] 2016-01-21 14:49:11.411 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+beforeTopic .... com.kk.trading.mapper.impl.Order.afterNewOrder
+
+[DEBUG] 2016-01-21 14:49:11.412 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:51)]
+Send message before Topic.... com.kk.trading.mapper.impl.Order.afterNewOrder,arg object:com.kk.trading.mapper.Order@1757cd72
+
+[DEBUG] 2016-01-21 14:49:11.412 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:71)]
+SendMsgBeforeInvokeAdvice result null
+
+[INFO] 2016-01-21 14:53:54.045 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 14:53:54 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 14:53:54.116 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 14:53:54.883 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:34)]
+SendMsgBeforeInvokeAdvice around.... com.kk.trading.mapper.impl.OrderMapperImpl
+
+[DEBUG] 2016-01-21 14:53:54.893 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+beforeTopic .... com.kk.trading.mapper.impl.Order.afterNewOrder
+
+[DEBUG] 2016-01-21 14:53:54.894 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:51)]
+Send message before Topic.... com.kk.trading.mapper.impl.Order.afterNewOrder,arg object:com.kk.trading.mapper.Order@1757cd72
+
+[DEBUG] 2016-01-21 14:53:54.894 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:71)]
+SendMsgBeforeInvokeAdvice result null
+
+[INFO] 2016-01-21 16:28:19.701 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 16:28:19 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 16:28:19.873 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 16:28:21.722 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:40)]
+beforeTopic .... com.kk.trading.mapper.impl.Order.afterNewOrder
+
+[DEBUG] 2016-01-21 16:28:21.722 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:76)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,arg object:[com.kk.trading.mapper.Order@2e377400]
+
+[DEBUG] 2016-01-21 16:28:21.724 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:87)]
+[发送调用后消息]Send message after invoke, Topic=testTopic789,arg object:[com.kk.trading.mapper.Order@2e377400]
+
+[DEBUG] 2016-01-21 16:28:21.724 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:64)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 16:50:00.717 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 16:50:00 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 16:50:00.777 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 16:50:01.777 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), beforeTopic .... 
+
+[DEBUG] 2016-01-21 16:50:01.778 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:79)]
+[发送调用前消息]Send message before invoke, Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order),Topic=com.kk.trading.mapper.impl.Order.afterNewOrder, Args:[com.kk.trading.mapper.Order@5c671d7f]
+
+[DEBUG] 2016-01-21 16:50:01.779 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:90)]
+[发送调用后消息]Send message after invoke, Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order),Topic=testTopic789, Args:[com.kk.trading.mapper.Order@5c671d7f],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 16:50:01.779 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:67)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 16:51:25.470 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 16:51:25 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 16:51:25.587 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 16:51:26.646 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 16:51:26.647 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order),Topic=com.kk.trading.mapper.impl.Order.afterNewOrder, Args:[com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 16:51:26.647 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic=testTopic789, Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 16:51:26.648 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke, Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order),Topic=testTopic789, Args:[com.kk.trading.mapper.Order@757277dc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 16:51:26.648 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 16:52:11.300 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 16:52:11 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 16:52:11.349 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 16:52:12.123 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 16:52:12.124 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order),Topic=com.kk.trading.mapper.impl.Order.afterNewOrder, Args:[com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 16:52:12.124 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 16:52:12.125 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke, Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order),Topic=testTopic789, Args:[com.kk.trading.mapper.Order@757277dc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 16:52:12.125 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 16:53:46.471 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 16:53:46 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 16:53:46.567 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 16:53:47.504 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 16:53:47.504 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 16:53:47.505 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 16:53:47.506 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 16:53:47.506 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 16:54:43.104 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 16:54:43 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 16:54:43.155 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 16:54:43.933 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 16:54:43.933 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 16:54:43.934 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 16:54:43.934 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 16:54:43.935 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 16:54:43.936 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String) 
+
+[DEBUG] 2016-01-21 16:54:43.937 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String), Args:[099]
+
+[DEBUG] 2016-01-21 16:54:43.937 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String)
+
+[DEBUG] 2016-01-21 16:54:43.937 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String), Args:[099],Result:ORDER_099
+
+[DEBUG] 2016-01-21 16:54:43.938 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[INFO] 2016-01-21 17:01:46.597 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:01:46 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:01:46.667 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:01:47.536 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:01:47.545 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:01:47.546 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@5c671d7f]
+
+[DEBUG] 2016-01-21 17:01:47.547 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:01:47.547 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@5c671d7f],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:01:47.547 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:01:47.548 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String)
+
+[DEBUG] 2016-01-21 17:01:47.548 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String) 
+
+[DEBUG] 2016-01-21 17:01:47.549 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String), Args:[099]
+
+[DEBUG] 2016-01-21 17:01:47.549 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String)
+
+[DEBUG] 2016-01-21 17:01:47.550 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String), Args:[099],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:01:47.550 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[INFO] 2016-01-21 17:02:45.019 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:02:45 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:02:45.077 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:02:45.828 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:02:45.838 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:02:45.839 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@5c671d7f]
+
+[DEBUG] 2016-01-21 17:02:45.840 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:02:45.840 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@5c671d7f],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:02:45.840 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:02:45.841 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:02:45.842 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:02:45.842 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@5c671d7f]
+
+[DEBUG] 2016-01-21 17:02:45.843 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:55)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:02:45.843 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@5c671d7f],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:02:45.843 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[INFO] 2016-01-21 17:07:57.275 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:07:57 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:07:57.347 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:07:58.151 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:175)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:07:58.159 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:07:58.160 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:07:58.161 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:07:58.161 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:07:58.161 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:07:58.162 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:175)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:07:58.163 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:07:58.163 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:07:58.163 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:07:58.164 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@757277dc],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:07:58.164 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[DEBUG] 2016-01-21 17:07:58.164 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:175)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:07:58.164 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:07:58.166 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:07:58.166 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:07:58.166 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@757277dc],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:07:58.167 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[INFO] 2016-01-21 17:08:31.860 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:08:31 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:08:31.909 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:08:32.657 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:08:32.667 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:08:32.668 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:08:32.669 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:08:32.669 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:08:32.669 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:08:32.670 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:08:32.670 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:08:32.671 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:08:32.671 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:08:32.671 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@757277dc],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:08:32.671 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[DEBUG] 2016-01-21 17:08:32.672 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:08:32.672 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:08:32.673 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:08:32.674 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:08:32.674 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@757277dc],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:08:32.674 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[INFO] 2016-01-21 17:09:33.620 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:09:33 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:09:33.680 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:09:34.542 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:09:34.551 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.afterNewOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:09:34.552 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.afterNewOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:09:34.553 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:09:34.553 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.afterNewOrder(com.kk.trading.mapper.Order), Args:[com.kk.trading.mapper.Order@757277dc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:09:34.553 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 17:09:34.554 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:09:34.554 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:09:34.555 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:09:34.555 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:09:34.555 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@757277dc],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:09:34.556 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[DEBUG] 2016-01-21 17:09:34.556 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:09:34.556 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:09:34.558 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@757277dc]
+
+[DEBUG] 2016-01-21 17:09:34.559 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:09:34.559 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@757277dc],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:09:34.559 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[INFO] 2016-01-21 17:10:12.074 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@490ab905: startup date [Thu Jan 21 17:10:12 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:10:12.254 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 17:10:34.076 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:10:34 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:10:34.144 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:10:35.102 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:10:35.112 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:10:35.113 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@5c671d7f]
+
+[DEBUG] 2016-01-21 17:10:35.113 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:10:35.114 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@5c671d7f],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:10:35.114 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[DEBUG] 2016-01-21 17:10:35.115 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:10:35.115 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:10:35.115 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@5c671d7f]
+
+[DEBUG] 2016-01-21 17:10:35.115 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:10:35.116 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@5c671d7f],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:10:35.116 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[INFO] 2016-01-21 17:10:54.257 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@490ab905: startup date [Thu Jan 21 17:10:54 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:10:54.608 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:11:03.545 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:11:16.272 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:11:16.273 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@66746f57]
+
+[DEBUG] 2016-01-21 17:11:16.274 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:11:16.274 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@66746f57],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:11:16.274 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[INFO] 2016-01-21 17:13:16.315 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@490ab905: startup date [Thu Jan 21 17:13:16 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:13:16.403 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:13:22.159 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:13:25.117 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:13:25.117 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@40844aab]
+
+[DEBUG] 2016-01-21 17:13:25.118 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:13:25.118 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@40844aab],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:13:25.119 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[DEBUG] 2016-01-21 17:13:48.095 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:175)]
+找到缓存方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:13:53.111 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:13:53.112 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@40844aab]
+
+[DEBUG] 2016-01-21 17:13:53.113 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:13:53.113 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@40844aab],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:13:53.114 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[INFO] 2016-01-21 17:14:49.088 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:14:49 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:14:49.147 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:14:49.915 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.923 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:14:49.924 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@1757cd72]
+
+[DEBUG] 2016-01-21 17:14:49.924 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.925 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@1757cd72],Result:ORDER_099
+
+[DEBUG] 2016-01-21 17:14:49.925 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[DEBUG] 2016-01-21 17:14:49.926 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:175)]
+找到缓存方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.926 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:14:49.926 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@1757cd72]
+
+[DEBUG] 2016-01-21 17:14:49.926 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.927 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@1757cd72],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:14:49.927 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[DEBUG] 2016-01-21 17:14:49.927 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:175)]
+找到缓存方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.927 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:14:49.929 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@1757cd72]
+
+[DEBUG] 2016-01-21 17:14:49.929 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.929 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@1757cd72],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:14:49.930 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[DEBUG] 2016-01-21 17:14:49.930 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:175)]
+找到缓存方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.930 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:14:49.931 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@1757cd72]
+
+[DEBUG] 2016-01-21 17:14:49.931 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='testTopic789', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:14:49.931 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=testTopic789, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@1757cd72],Result:ORDER_199
+
+[DEBUG] 2016-01-21 17:14:49.932 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[INFO] 2016-01-21 17:32:19.384 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:32:19 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:32:19.435 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 17:33:16.125 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 17:33:16 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 17:33:16.177 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 17:33:16.936 main [com.kk.AbstractSendMessageAdvice.getMethod(SendMsgAbstractAdvice.java:171)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:33:16.944 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:45)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 17:33:16.945 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(SendMsgAbstractAdvice.java:82)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@687e99d8]
+
+[DEBUG] 2016-01-21 17:33:16.945 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:56)]
+AfterTopic='Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 17:33:16.946 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(SendMsgAbstractAdvice.java:93)]
+[发送调用后消息]Send message after invoke,Topic=Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@687e99d8],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 17:33:16.946 main [com.kk.AbstractSendMessageAdvice.around(SendMsgAbstractAdvice.java:70)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[INFO] 2016-01-21 18:03:38.330 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:03:38 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:03:38.429 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 18:06:05.279 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:06:05 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:06:05.336 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[INFO] 2016-01-21 18:07:09.378 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:07:09 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:07:09.474 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:07:10.332 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:07:10.333 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:07:10.334 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@13b6aecc]
+
+[DEBUG] 2016-01-21 18:07:10.353 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:07:10.353 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@13b6aecc],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:07:10.353 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 18:09:40.713 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:09:40 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:09:40.766 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:09:41.522 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:09:41.522 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:09:41.523 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@687e99d8]
+
+[DEBUG] 2016-01-21 18:09:41.535 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:09:41.535 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@687e99d8],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:09:41.536 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 18:10:21.987 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:10:21 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:10:22.051 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:10:22.922 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:10:22.923 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:10:22.923 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af]
+
+[DEBUG] 2016-01-21 18:10:22.941 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:10:22.942 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:10:22.942 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 18:11:08.044 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:11:08 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:11:08.119 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:11:08.874 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:11:08.875 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:11:08.875 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af]
+
+[DEBUG] 2016-01-21 18:11:08.897 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:11:08.897 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:11:08.898 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 18:13:45.565 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:13:45 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:13:45.622 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:13:46.426 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:13:46.427 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:13:46.427 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af]
+
+[DEBUG] 2016-01-21 18:13:46.441 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:13:46.442 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:13:46.442 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 18:14:26.805 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:14:26 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:14:26.878 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:14:27.656 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:14:27.656 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:14:27.657 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@117e949d]
+
+[DEBUG] 2016-01-21 18:14:27.670 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:14:27.670 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@117e949d],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:14:27.671 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[INFO] 2016-01-21 18:15:28.131 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:15:28 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:15:28.211 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:15:29.175 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.175 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:15:29.176 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@31f9b85e]
+
+[DEBUG] 2016-01-21 18:15:29.185 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:15:29.186 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@31f9b85e]
+
+[DEBUG] 2016-01-21 18:15:29.188 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.188 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@31f9b85e],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:15:29.188 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:15:29.189 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.189 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@31f9b85e],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:15:29.189 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:15:29.189 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.190 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:15:29.190 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@31f9b85e]
+
+[DEBUG] 2016-01-21 18:15:29.192 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.getOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.192 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.getOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[099, com.kk.trading.mapper.Order@31f9b85e],Result:ORDER_099
+
+[DEBUG] 2016-01-21 18:15:29.192 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result ORDER_099
+
+[DEBUG] 2016-01-21 18:15:29.193 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.getOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:15:29.193 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.getOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@31f9b85e]
+
+[DEBUG] 2016-01-21 18:15:29.193 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.getOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.193 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.getOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.getOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[199, com.kk.trading.mapper.Order@31f9b85e],Result:ORDER_199
+
+[DEBUG] 2016-01-21 18:15:29.194 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result ORDER_199
+
+[DEBUG] 2016-01-21 18:15:29.195 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.196 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:15:29.196 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@31f9b85e]
+
+[DEBUG] 2016-01-21 18:15:29.197 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:29.197 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@31f9b85e],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:15:29.197 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[INFO] 2016-01-21 18:15:45.485 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:15:45 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:15:45.542 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:15:46.319 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:46.319 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:15:46.320 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af]
+
+[DEBUG] 2016-01-21 18:15:46.330 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:46.330 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@e4487af],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:15:46.331 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:15:46.332 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:46.332 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:15:46.333 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@e4487af]
+
+[DEBUG] 2016-01-21 18:15:46.333 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:15:46.333 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@e4487af],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:15:46.334 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[INFO] 2016-01-21 18:19:19.836 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:19:19 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:19:19.896 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:19:20.659 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:19:20.660 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:19:20.660 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@c86b9e3]
+
+[DEBUG] 2016-01-21 18:19:20.671 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:19:20.671 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@c86b9e3],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:19:20.671 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:19:20.673 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:19:20.673 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:19:20.673 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@c86b9e3]
+
+[DEBUG] 2016-01-21 18:19:20.674 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:19:20.674 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@c86b9e3],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:19:20.674 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[INFO] 2016-01-21 18:20:12.047 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:20:12 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:20:12.111 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:20:12.846 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:20:12.847 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:20:12.847 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@6aaceffd]
+
+[DEBUG] 2016-01-21 18:20:12.859 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:20:12.859 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@6aaceffd],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:20:12.860 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:20:12.862 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:20:12.862 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:20:12.862 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@6aaceffd]
+
+[DEBUG] 2016-01-21 18:20:12.863 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:20:12.863 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@6aaceffd],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:20:12.863 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[INFO] 2016-01-21 18:21:03.578 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:21:03 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:21:03.643 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:21:04.583 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:21:04.584 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:21:04.585 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@687e99d8]
+
+[DEBUG] 2016-01-21 18:21:04.600 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:21:04.600 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@687e99d8],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:21:04.601 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:21:04.603 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:21:04.604 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:21:04.604 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@687e99d8]
+
+[DEBUG] 2016-01-21 18:21:04.604 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:21:04.605 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@687e99d8],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:21:04.605 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[INFO] 2016-01-21 18:22:52.565 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:22:52 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:22:52.637 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:22:53.472 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:22:53.473 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:22:53.474 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@58ea606c]
+
+[DEBUG] 2016-01-21 18:22:53.485 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:22:53.485 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@58ea606c],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:22:53.485 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:22:53.487 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:22:53.487 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:22:53.488 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@58ea606c]
+
+[DEBUG] 2016-01-21 18:22:53.488 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:22:53.488 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@58ea606c],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:22:53.489 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:22:53.490 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:22:53.491 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.insertOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:22:53.493 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.insertOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@58ea606c]
+
+[DEBUG] 2016-01-21 18:22:53.493 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.insertOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:22:53.493 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.insertOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@58ea606c],Result:INSERT 499
+
+[DEBUG] 2016-01-21 18:22:53.494 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result INSERT 499
+
+[INFO] 2016-01-21 18:23:35.789 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:23:35 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:23:35.855 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:23:36.689 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:23:36.690 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:23:36.690 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:23:36.702 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:23:36.703 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@68e5eea7],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:23:36.703 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:23:36.705 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:23:36.705 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:23:36.706 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:23:36.706 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:23:36.706 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@68e5eea7],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:23:36.707 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:23:36.708 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:23:36.708 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.insertOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:23:36.709 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.insertOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:23:36.710 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.insertOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:23:36.710 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.insertOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@68e5eea7],Result:INSERT 499
+
+[DEBUG] 2016-01-21 18:23:36.710 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result INSERT 499
+
+[INFO] 2016-01-21 18:24:09.575 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:24:09 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:24:09.662 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:24:10.450 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:10.451 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:24:10.452 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:24:10.465 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:10.466 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@68e5eea7],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:24:10.466 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:24:10.467 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:10.468 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:24:10.468 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:24:10.468 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:10.468 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@68e5eea7],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:24:10.468 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:24:10.470 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:10.470 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.insertOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:24:10.471 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.insertOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:24:10.471 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.insertOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:10.472 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.insertOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@68e5eea7],Result:INSERT 499
+
+[DEBUG] 2016-01-21 18:24:10.472 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result INSERT 499
+
+[INFO] 2016-01-21 18:24:34.703 main [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368102c8: startup date [Thu Jan 21 18:24:34 CST 2016]; root of context hierarchy
+
+[INFO] 2016-01-21 18:24:34.778 main [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext.xml]
+
+[DEBUG] 2016-01-21 18:24:35.541 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.542 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='testTopic',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:24:35.542 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=testTopic,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:24:35.555 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.createOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.555 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.createOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.createOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[A001, com.kk.trading.mapper.Order@68e5eea7],Result:NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:24:35.555 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result NEW_ORDER002
+
+[DEBUG] 2016-01-21 18:24:35.557 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.557 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.updateOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:24:35.558 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.updateOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:24:35.558 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.updateOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.558 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.updateOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.updateOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[399, com.kk.trading.mapper.Order@68e5eea7],Result:UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:24:35.559 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result UPDATEORDER_399
+
+[DEBUG] 2016-01-21 18:24:35.560 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.560 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.insertOrder',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:24:35.561 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.insertOrder,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:24:35.562 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.insertOrder', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.562 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.insertOrder, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.insertOrder(java.lang.String,com.kk.trading.mapper.Order), Args:[499, com.kk.trading.mapper.Order@68e5eea7],Result:INSERT 499
+
+[DEBUG] 2016-01-21 18:24:35.562 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result INSERT 499
+
+[DEBUG] 2016-01-21 18:24:35.562 main [com.kk.AbstractSendMessageAdvice.getMethod(InvocationToSendMessageAdvice.java:168)]
+找到方法:public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.delete(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.563 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:44)]
+BeforeTopic='com.kk.trading.mapper.impl.Order.delete',Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.delete(java.lang.String,com.kk.trading.mapper.Order) 
+
+[DEBUG] 2016-01-21 18:24:35.563 main [com.kk.AbstractSendMessageAdvice.sendMessageBefore(InvocationToSendMessageAdvice.java:81)]
+[发送调用前消息]Send message before invoke, Topic=com.kk.trading.mapper.impl.Order.delete,Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.delete(java.lang.String,com.kk.trading.mapper.Order), Args:[799, com.kk.trading.mapper.Order@68e5eea7]
+
+[DEBUG] 2016-01-21 18:24:35.563 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:55)]
+AfterTopic='com.kk.trading.mapper.impl.Order.delete', Method public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.delete(java.lang.String,com.kk.trading.mapper.Order)
+
+[DEBUG] 2016-01-21 18:24:35.563 main [com.kk.AbstractSendMessageAdvice.sendMessageAfter(InvocationToSendMessageAdvice.java:92)]
+[发送调用后消息]Send message after invoke,Topic=com.kk.trading.mapper.impl.Order.delete, Method=public java.lang.String com.kk.trading.mapper.impl.OrderMapperImpl.delete(java.lang.String,com.kk.trading.mapper.Order), Args:[799, com.kk.trading.mapper.Order@68e5eea7],Result:INSERT 799
+
+[DEBUG] 2016-01-21 18:24:35.564 main [com.kk.AbstractSendMessageAdvice.around(InvocationToSendMessageAdvice.java:69)]
+SendMsgBeforeInvokeAdvice result INSERT 799
 

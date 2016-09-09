@@ -1,22 +1,31 @@
-/**
- * 
- */
-package com.kk;
+package com.kk.backup;
 
 import java.lang.reflect.Method;
 
+import org.apache.commons.lang.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Aspect;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.kk.SendMessageAfter;
+import com.kk.SendMessageBefore;
 
 /**
  * 
- * SendMsgAdvice. 发消息切面
- * @author kk
+ * AbstractSendMessageAdvice
+ * @author kk hekun@zhai.me
+ * @since 1.0
+ * 2016年1月20日
  *
  */
-@Aspect
-public class SendMsgAdvice {
+public abstract class SendMsgAbstractAdvice {
 	
+	private static Logger log = LoggerFactory.getLogger(SendMsgAbstractAdvice.class);
+	
+	public SendMsgAbstractAdvice() {
+	}
+	
+
 	/**
 	 * SendMsg 
 	 * @param pjp
@@ -25,7 +34,7 @@ public class SendMsgAdvice {
 	 */
 	public Object around(ProceedingJoinPoint pjp) throws Throwable {
 		String targetClass = pjp.getTarget().getClass().getName();
-		System.out.println("SendMsgAdvice around.... " +  targetClass);
+		if(log.isDebugEnabled()) log.debug("SendMsgBeforeInvokeAdvice around.... " +  targetClass);
 		
 		Object result = null;
 		Method method = getMethod(pjp);
@@ -35,34 +44,34 @@ public class SendMsgAdvice {
 		Object[] args = pjp.getArgs();
 		Object object = args.length>0 ? args[0] : null;
 		
-		System.out.println("beforeTopic .... "  + beforeTopic);
+		if(log.isDebugEnabled()) log.debug("beforeTopic .... "  + beforeTopic);
 		
 		try {
 			if(beforeTopic != null) {
 				
 				sendBeforeMsg(targetClass,method,args);
 				
-				System.out.println("Send message before Topic.... " +  beforeTopic + ",arg object:" + object);
+				if(log.isDebugEnabled()) log.debug("Send message before Topic.... " +  beforeTopic + ",arg object:" + object);
 			}else {
 				String afterTopic = getAfterSendMsgTopicOnMethod(method);
 				if( afterTopic!=null) {
 					result = pjp.proceed();
 					
 					sendAfterMsg(targetClass,method,args);
-					System.out.println("Send message after Topic.... " +  afterTopic + ",arg object:" + object + ",result=" + result);
+					if(log.isDebugEnabled()) log.debug("Send message after Topic.... " +  afterTopic + ",arg object:" + object + ",result=" + result);
 				}
 			}
 			
 		} catch (Throwable e) {
 			
 			//e.printStackTrace();
-			System.out.println("SendMsgAdvice exception " + e);
+			if(log.isDebugEnabled()) log.debug("SendMsgBeforeInvokeAdvice exception " + e);
 			
 			sendAfterException(targetClass,method,args);
 			
 			throw e;
 		}
-		System.out.println("SendMsgAdvice result " + result);
+		if(log.isDebugEnabled()) log.debug("SendMsgBeforeInvokeAdvice result " + result);
 		return result;
 	}
 	
@@ -105,13 +114,24 @@ public class SendMsgAdvice {
 	 */
 	protected String getBeforeSendMsgTopicOnMethod(Method method) throws NoSuchMethodException {
 		
-		
-		BeforeSendMsg sendMsgannotation = method.getAnnotation( BeforeSendMsg.class);
+		SendMessageBefore sendMsgannotation = method.getAnnotation( SendMessageBefore.class);
 		String topic = sendMsgannotation!=null ? sendMsgannotation.topic() : null;
+
+		if( topic == null) {
+			 topic = method.getDeclaringClass().getName() +"." + method.getName();
+			 topic = fixTopicName( topic );
+		}
+		
 		return topic;
 	}
 
-
+	
+	protected String fixTopicName( String topicName0) {
+		String topicNameStr = topicName0;
+		topicNameStr = StringUtils.replace(topicNameStr, "MapperImpl", "");
+//		topicNameStr = StringUtils.replace(topicNameStr, "impl.", "");
+		return topicNameStr;
+	}
 	/**
 	 * Get after Topic Name on Method
 	 * @param pjp
@@ -119,9 +139,15 @@ public class SendMsgAdvice {
 	 * @throws NoSuchMethodException
 	 */
 	protected String getAfterSendMsgTopicOnMethod(Method method) throws NoSuchMethodException {
-		
-		AfterSendMsg sendMsgannotation = method.getAnnotation( AfterSendMsg.class );
+//		
+		SendMessageAfter sendMsgannotation = method.getAnnotation( SendMessageAfter.class );
 		String topic = sendMsgannotation!=null ? sendMsgannotation.topic() : null;
+		
+		if( topic==null) {
+			 topic = method.getDeclaringClass().getName() +"." + method.getName();
+			 topic = fixTopicName( topic );
+		}
+		
 		return topic;
 	}
 	
@@ -151,4 +177,5 @@ public class SendMsgAdvice {
 //	    method = clazz.getMethod(methodName, argClasses);
 		return method;
 	}
+
 }
